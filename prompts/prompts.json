@@ -1,0 +1,29 @@
+{
+    "prompts": [
+      {
+        "id": 1,
+        "type": "Technical",
+        "text": "Is Python an interpreted or compiled language?"
+      },
+      {
+        "id": 2,
+        "type": "Creative",
+        "text": "Write a short story about a robot discovering a garden on a deserted planet."
+      },
+      {
+        "id": 3,
+        "type": "Summarization",
+        "text": "Summarize the key differences between ARM and x86 architectures in two paragraphs."
+      },
+      {
+        "id": 4,
+        "type": "Logical",
+        "text": "A farmer has 17 sheep. All but 9 run away. How many sheep does the farmer have left? Explain your reasoning step by step."
+      },
+      {
+        "id": 5,
+        "type": "Mathematical",
+        "text": "Derive the formula for the sum of an arithmetic series and verify it for the integers 1 through 10."
+      }
+    ]
+  }

@@ -1,0 +1,4 @@
+models/
+*.gguf
+
+ollama_venv/

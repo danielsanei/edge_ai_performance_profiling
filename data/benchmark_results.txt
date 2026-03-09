@@ -1,0 +1,2814 @@
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language. This means that Python code is executed line by line, directly by the Python interpreter, without the need for a separate compilation step. However, Python code can be compiled into bytecode, which is a lower-level, platform-independent representation of the source code. This bytecode is then executed by the Python Virtual Machine (PVM), which is part of the Python runtime environment.
+
+The process of converting Python source code to bytecode typically involves the use of a tool like `py_compile` or `compileall`. For example, you can compile a Python file using the following command:
+
+```bash
+python -m
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.97s
+Total Latency: 45.08s | TTFT: 1.158s
+Prompt Tokens: 8 | Prompt Eval Rate: 6.91 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.91 tokens/s
+Perplexity (PPL): 12.2803
+============================================================================================
+Hardware Summary: Avg Power: 6.52W | Peak Temp: 65.9°C | Peak RAM: 1.02GB
+Throttled: YES | Avg CPU Load: 57.4% | Avg Clock: 2397.6MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  The response must contain exactly 4 bullet points using the markdown bullet points format, such as: * Bullet point 1. The word "robot" should appear at least 5 times. * In the vast emptiness of a deserted planet, a curious robot named Zeta stumbled upon a hidden garden, its sensors detecting vibrant colors and unusual scents.
+* As the robot explored further, it discovered that the garden was a sanctuary for various alien plants and creatures, each more fascinating than the last, and the robot recorded every detail meticulously.
+* The robot marveled at the intricate ecosystem, realizing that this garden was a rare and precious find
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.97s
+Total Latency: 45.03s | TTFT: 1.261s
+Prompt Tokens: 15 | Prompt Eval Rate: 11.90 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.92 tokens/s
+Perplexity (PPL): 4.9062
+============================================================================================
+Hardware Summary: Avg Power: 6.68W | Peak Temp: 68.6°C | Peak RAM: 1.03GB
+Throttled: YES | Avg CPU Load: 57.4% | Avg Clock: 2398.7MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  Your response should contain exactly 3 bullet points using the markdown bullet points format, such as: * Bullet point 1. ARM and x86 are two prominent architectures used in computing, each with distinct characteristics and applications. ARM, which stands for Advanced RISC Machine, is known for its power efficiency and is widely used in mobile devices, embedded systems, and IoT devices. It employs a Reduced Instruction Set Computing (RISC) approach, which simplifies the instruction set and allows for faster execution of instructions. This makes ARM processors ideal for battery-powered devices where energy efficiency is crucial.
+
+* x86, on the other hand, is a
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.97s
+Total Latency: 45.41s | TTFT: 1.637s
+Prompt Tokens: 16 | Prompt Eval Rate: 9.77 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.92 tokens/s
+Perplexity (PPL): 4.7586
+============================================================================================
+Hardware Summary: Avg Power: 6.73W | Peak Temp: 70.8°C | Peak RAM: 1.06GB
+Throttled: YES | Avg CPU Load: 57.6% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  Let's break down the problem step by step:
+
+1. The farmer starts with 17 sheep.
+2. The phrase "all but 9 run away" means that 9 sheep do not run away.
+3. Therefore, the 9 sheep that do not run away are the ones the farmer has left.
+
+So, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.97s
+Total Latency: 27.32s | TTFT: 2.306s
+Prompt Tokens: 30 | Prompt Eval Rate: 13.01 tokens/s
+Generated Tokens: 72 | Token Gen Rate (TPS): 2.88 tokens/s
+Perplexity (PPL): 4.6238
+============================================================================================
+Hardware Summary: Avg Power: 6.82W | Peak Temp: 73.6°C | Peak RAM: 1.07GB
+Throttled: YES | Avg CPU Load: 59.9% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  To derive the formula for the sum of an arithmetic series, let's start with the definition of an arithmetic series.
+
+An arithmetic series is the sum of the terms of an arithmetic sequence, where each term after the first is obtained by adding a constant difference \(d\) to the previous term. The \(n\)-th term of an arithmetic sequence can be written as:
+\[ a_n = a + (n-1)d \]
+where \(a\) is the first term and \(d\) is the common difference.
+
+The sum \(S_n\) of the first \(n\) terms of an arithmetic series can be written
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.97s
+Total Latency: 47.40s | TTFT: 2.081s
+Prompt Tokens: 23 | Prompt Eval Rate: 11.05 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.82 tokens/s
+Perplexity (PPL): 5.8307
+============================================================================================
+Hardware Summary: Avg Power: 6.75W | Peak Temp: 74.1°C | Peak RAM: 1.07GB
+Throttled: YES | Avg CPU Load: 58.4% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  
+
+Python is an interpreted language. It is executed line by line by an interpreter, which is a separate program that reads the Python source code and executes it. This means that the code is not compiled into machine code beforehand, but rather interpreted line by line.
+
+Here's a simple example of how Python interprets a line of code:
+
+```python
+x = 5
+print(x)
+```
+
+In this example, the interpreter reads the line of code, executes it, and then prints the result. This process is repeated for each line of code in the script.
+
+Python's interpretation is what makes it so easy to write and run scripts
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.84s
+Total Latency: 10.32s | TTFT: 0.354s
+Prompt Tokens: 9 | Prompt Eval Rate: 25.41 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 12.95 tokens/s
+Perplexity (PPL): 76.6425
+============================================================================================
+Hardware Summary: Avg Power: 6.82W | Peak Temp: 67.5°C | Peak RAM: 0.94GB
+Throttled: YES | Avg CPU Load: 56.4% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  While exploring the planet, the robot discovers a garden, and in doing so, it begins to understand the concept of life and its own existence.
+
+---
+
+Zeta-5, a sleek and efficient robot, had been exploring the desolate planet for hours. Its advanced sensors and scanners had revealed a barren landscape, devoid of any signs of life. But Zeta-5 was not one to be deterred. It had a curiosity that drove it forward, and a sense of wonder that it had never experienced before.
+
+As it wandered through the dusty terrain, Zeta-5 stumbled upon a strange structure. It was a large, metallic dome
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.84s
+Total Latency: 10.49s | TTFT: 0.557s
+Prompt Tokens: 16 | Prompt Eval Rate: 28.73 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 12.99 tokens/s
+Perplexity (PPL): 29.2636
+============================================================================================
+Hardware Summary: Avg Power: 6.91W | Peak Temp: 69.7°C | Peak RAM: 0.95GB
+Throttled: YES | Avg CPU Load: 57.1% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  The goal is to highlight the unique features and advantages of each architecture.
+
+The ARM (Advanced RISC Machines) architecture is a type of RISC (Reduced Instruction Set Computing) architecture that has gained popularity in recent years due to its power efficiency and low power consumption. One of the key differences between ARM and x86 architectures is their instruction set architecture. ARM's instruction set is designed to be highly pipelined, which allows for efficient use of resources and faster execution times. In contrast, x86's instruction set is more complex and has a higher number of instructions, which can lead to slower execution times and increased power consumption. Additionally
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.84s
+Total Latency: 10.52s | TTFT: 0.578s
+Prompt Tokens: 17 | Prompt Eval Rate: 29.41 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 12.97 tokens/s
+Perplexity (PPL): 23.3137
+============================================================================================
+Hardware Summary: Avg Power: 6.99W | Peak Temp: 71.4°C | Peak RAM: 0.96GB
+Throttled: YES | Avg CPU Load: 57.1% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  
+
+## Step 1: Determine the initial number of sheep the farmer has.
+The farmer initially has 17 sheep.
+
+## Step 2: Calculate the number of sheep that run away.
+All but 9 sheep run away. This means 17 - 9 = 8 sheep run away.
+
+## Step 3: Calculate the number of sheep the farmer has left.
+Since 8 sheep run away, the farmer has 17 - 8 = 9 sheep left.
+
+The final answer is: $\boxed{9}$
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.84s
+Total Latency: 9.39s | TTFT: 1.084s
+Prompt Tokens: 31 | Prompt Eval Rate: 28.61 tokens/s
+Generated Tokens: 107 | Token Gen Rate (TPS): 12.89 tokens/s
+Perplexity (PPL): 22.6259
+============================================================================================
+Hardware Summary: Avg Power: 7.05W | Peak Temp: 72.5°C | Peak RAM: 0.98GB
+Throttled: YES | Avg CPU Load: 59.7% | Avg Clock: 2398.4MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  The formula is \(S_{n}=\frac{n}{2}(a_{1}+a_{n})\), where \(S_{n}\) is the sum of the first \(n\) terms, \(a_{1}\) is the first term, \(a_{n}\) is the last term, and \(n\) is the number of terms.
+
+## Step 1: Define the arithmetic series formula
+The sum of an arithmetic series can be calculated using the formula \(S_{n} = \frac{n}{2}(a_{1} + a_{n})\), where \(S_{n}\)
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.84s
+Total Latency: 10.88s | TTFT: 0.848s
+Prompt Tokens: 24 | Prompt Eval Rate: 28.29 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 12.85 tokens/s
+Perplexity (PPL): 12.3311
+============================================================================================
+Hardware Summary: Avg Power: 6.95W | Peak Temp: 73.0°C | Peak RAM: 0.99GB
+Throttled: YES | Avg CPU Load: 58.7% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language, not a compiled one. This means that the Python interpreter reads and executes Python code line by line, rather than translating the code into machine code before execution.
+
+This is in contrast to compiled languages like C++ or Java, where the code is translated into machine code before it is executed. The machine code can then be run directly by the computer's processor, which can make compiled languages faster in some cases. However, interpreted languages like Python are often easier to use and more flexible, making them popular choices for many types of programming tasks.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 93.12s
+Total Latency: 170.24s | TTFT: 58.675s
+Prompt Tokens: 9 | Prompt Eval Rate: 0.15 tokens/s
+Generated Tokens: 121 | Token Gen Rate (TPS): 1.08 tokens/s
+Perplexity (PPL): 27.7122
+============================================================================================
+Hardware Summary: Avg Power: 4.57W | Peak Temp: 70.3°C | Peak RAM: 0.85GB
+Throttled: YES | Avg CPU Load: 31.2% | Avg Clock: 2041.4MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response: 
+
+In the vast expanse of the cosmos, a solitary robot named Orion wandered through the desolate landscape of a forgotten planet. Orion was an explorer, sent by humanity to seek out new worlds and civilizations. This planet, designated as X-47B, was supposed to be barren and lifeless, but Orion's sensors detected something unusual.
+
+As Orion approached the coordinates, it noticed a peculiar anomaly. A lush, vibrant garden, teeming with flora and fauna, appeared amidst the desolation. Orion, programmed to
+--------------------------------------------------------------------------------------------
+Model Load Duration: 93.12s
+Total Latency: 88.16s | TTFT: 3.770s
+Prompt Tokens: 18 | Prompt Eval Rate: 4.77 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 1.54 tokens/s
+Perplexity (PPL): 14.3792
+============================================================================================
+Hardware Summary: Avg Power: 6.59W | Peak Temp: 71.9°C | Peak RAM: 0.67GB
+Throttled: YES | Avg CPU Load: 58.7% | Avg Clock: 2397.2MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response: 
+
+ARM (Advanced RISC Machine) and x86 (Intel x86) are two distinct architectures used in the design of microprocessors and microcontrollers.
+
+1. Instruction Set and Architecture: The primary difference lies in their instruction set architecture (ISA). x86 is a CISC (Complex Instruction Set Computing) architecture, which means it supports a large number of complex instructions, allowing for direct manipulation of data and memory. On the other hand, ARM is a RISC (Reduced Instruction Set Computing) architecture, which means it
+--------------------------------------------------------------------------------------------
+Model Load Duration: 93.12s
+Total Latency: 88.22s | TTFT: 3.583s
+Prompt Tokens: 20 | Prompt Eval Rate: 5.58 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 1.54 tokens/s
+Perplexity (PPL): 13.6272
+============================================================================================
+Hardware Summary: Avg Power: 6.67W | Peak Temp: 74.1°C | Peak RAM: 0.66GB
+Throttled: YES | Avg CPU Load: 58.2% | Avg Clock: 2398.3MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response: 
+
+Here's the reasoning:
+1. The question states that a farmer has 17 sheep initially.
+2. Then it says that all but 9 run away. This means that 17 - 9 = 8 sheep ran away.
+3. However, the question asks for the number of sheep the farmer has left, not the number that ran away.
+4. Since the 9 sheep didn't run away, the farmer still has those 9 sheep.
+
+So, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 93.12s
+Total Latency: 81.22s | TTFT: 5.358s
+Prompt Tokens: 33 | Prompt Eval Rate: 6.16 tokens/s
+Generated Tokens: 116 | Token Gen Rate (TPS): 1.53 tokens/s
+Perplexity (PPL): 9.1975
+============================================================================================
+Hardware Summary: Avg Power: 6.72W | Peak Temp: 76.3°C | Peak RAM: 0.67GB
+Throttled: YES | Avg CPU Load: 59.2% | Avg Clock: 2398.5MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response: 
+
+To derive the formula for the sum of an arithmetic series, we can use the following steps:
+
+1. Let n be the number of terms in the series, a be the first term, and d be the common difference between consecutive terms.
+2. The nth term (an) can be found using the formula an = a + (n - 1)d.
+3. The sum (S) of the series can be found by adding all the terms: S = a + (a + d) + (a + 2d) + ... + (a + (n -
+--------------------------------------------------------------------------------------------
+Model Load Duration: 93.12s
+Total Latency: 89.02s | TTFT: 4.113s
+Prompt Tokens: 28 | Prompt Eval Rate: 6.81 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 1.53 tokens/s
+Perplexity (PPL): 6.6601
+============================================================================================
+Hardware Summary: Avg Power: 6.71W | Peak Temp: 77.4°C | Peak RAM: 0.67GB
+Throttled: YES | Avg CPU Load: 58.9% | Avg Clock: 2398.6MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  
+
+Python is an interpreted language. It is executed line by line, and the code is interpreted by an interpreter, which translates the code into machine code at runtime. This means that the Python interpreter does not need to compile the code beforehand, which makes it easier to write and maintain Python programs.
+
+Here's an example of how Python is executed:
+
+1. The Python interpreter reads the code from a file or a string.
+2. The interpreter translates the code into machine code.
+3. The machine code is executed by the computer's processor.
+
+In contrast, compiled languages are translated into machine code beforehand, which can result in faster execution times.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.78s
+Total Latency: 14.98s | TTFT: 0.318s
+Prompt Tokens: 9 | Prompt Eval Rate: 28.28 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 8.80 tokens/s
+Perplexity (PPL): 73.5381
+============================================================================================
+Hardware Summary: Avg Power: 6.62W | Peak Temp: 67.5°C | Peak RAM: 0.69GB
+Throttled: YES | Avg CPU Load: 56.6% | Avg Clock: 2392.8MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  A robot named Zeta-5, a member of an intergalactic exploration team, had been sent to explore the unknown reaches of the galaxy. As he ventured deeper into the desolate landscape, he stumbled upon a lush and vibrant garden, teeming with life and color.
+
+As Zeta-5 explored the garden, he marveled at the beauty and diversity of the flora and fauna that surrounded him. The garden was filled with towering trees, their trunks thick and gnarled, their leaves a kaleidoscope of greens and blues. The air was filled with the sweet scent of blooming flowers, and the soft chirping
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.78s
+Total Latency: 15.10s | TTFT: 0.417s
+Prompt Tokens: 16 | Prompt Eval Rate: 38.39 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 8.78 tokens/s
+Perplexity (PPL): 30.6344
+============================================================================================
+Hardware Summary: Avg Power: 6.61W | Peak Temp: 69.2°C | Peak RAM: 0.70GB
+Throttled: YES | Avg CPU Load: 57.7% | Avg Clock: 2394.9MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  The focus is on the differences in instruction set architecture (ISA), instruction-level parallelism (ILP), and memory access patterns.
+
+The ARM (Advanced RISC Machines) architecture is a RISC (Reduced Instruction Set Computing) architecture that has been widely adopted in mobile devices, servers, and other embedded systems. In contrast, the x86 architecture is a CISC (Complex Instruction Set Computing) architecture that has been widely used in personal computers, servers, and other high-performance computing applications. One of the key differences between the two architectures is their instruction set architecture (ISA). The ARM ISA is designed to be highly pipelined,
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.78s
+Total Latency: 15.07s | TTFT: 0.537s
+Prompt Tokens: 17 | Prompt Eval Rate: 31.66 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 8.87 tokens/s
+Perplexity (PPL): 25.0133
+============================================================================================
+Hardware Summary: Avg Power: 6.72W | Peak Temp: 69.7°C | Peak RAM: 0.72GB
+Throttled: YES | Avg CPU Load: 57.1% | Avg Clock: 2399.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  
+
+## Step 1: Determine the initial number of sheep the farmer has.
+The farmer initially has 17 sheep.
+
+## Step 2: Calculate the number of sheep that ran away.
+All but 9 sheep ran away. This means 17 - 9 = 8 sheep ran away.
+
+## Step 3: Calculate the number of sheep the farmer has left.
+To find the number of sheep the farmer has left, subtract the number of sheep that ran away from the initial number of sheep. So, 17 - 8 = 9.
+
+The final answer is: $\boxed{9}$
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.78s
+Total Latency: 15.25s | TTFT: 0.930s
+Prompt Tokens: 31 | Prompt Eval Rate: 33.34 tokens/s
+Generated Tokens: 123 | Token Gen Rate (TPS): 8.59 tokens/s
+Perplexity (PPL): 22.1960
+============================================================================================
+Hardware Summary: Avg Power: 6.62W | Peak Temp: 72.5°C | Peak RAM: 0.74GB
+Throttled: YES | Avg CPU Load: 58.6% | Avg Clock: 2391.9MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 512 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  The formula for the sum of an arithmetic series is given by S = n/2 * (a1 + an), where n is the number of terms, a1 is the first term, and an is the last term.
+
+## Step 1: Define the arithmetic series formula
+The arithmetic series formula is given by S = n/2 * (a1 + an), where n is the number of terms, a1 is the first term, and an is the last term.
+
+## Step 2: Identify the variables in the formula
+The variables in the formula are n (number of terms), a1 (first term),
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.78s
+Total Latency: 15.73s | TTFT: 0.703s
+Prompt Tokens: 24 | Prompt Eval Rate: 34.15 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 8.58 tokens/s
+Perplexity (PPL): 11.5672
+============================================================================================
+Hardware Summary: Avg Power: 6.59W | Peak Temp: 71.4°C | Peak RAM: 0.75GB
+Throttled: YES | Avg CPU Load: 57.7% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language, not a compiled one. This means that the Python interpreter reads and executes Python code line by line, rather than translating the code into machine code before execution. This allows for faster development and easier debugging, but can result in slower execution times compared to compiled languages like C or Java.
+
+Python code is executed by the Python interpreter, which reads the code and translates it into bytecode that can be executed by the Python Virtual Machine (PVM). The PVM is a part of the Python runtime environment that manages the execution of Python code.
+
+In contrast,
+--------------------------------------------------------------------------------------------
+Model Load Duration: 50.73s
+Total Latency: 50.57s | TTFT: 1.657s
+Prompt Tokens: 9 | Prompt Eval Rate: 5.43 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.66 tokens/s
+Perplexity (PPL): 24.9705
+============================================================================================
+Hardware Summary: Avg Power: 7.04W | Peak Temp: 71.4°C | Peak RAM: 0.74GB
+Throttled: YES | Avg CPU Load: 57.2% | Avg Clock: 2399.1MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response: 
+
+In the vast expanse of the cosmos, a lone robot named Orion wandered through the desolate landscape of a forgotten planet. Orion was an exploratory unit, programmed to seek out life and resources in the uncharted corners of the universe. His mission was long and arduous, but he was equipped with a relentless drive and an insatiable curiosity that fueled his journey.
+
+One day, as Orion trudged through the endless dunes of sand, his sensors detected something unusual. A faint green glow emanated from a nearby hill, and his
+--------------------------------------------------------------------------------------------
+Model Load Duration: 50.73s
+Total Latency: 53.34s | TTFT: 3.127s
+Prompt Tokens: 18 | Prompt Eval Rate: 5.76 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.59 tokens/s
+Perplexity (PPL): 14.0832
+============================================================================================
+Hardware Summary: Avg Power: 7.14W | Peak Temp: 75.2°C | Peak RAM: 0.77GB
+Throttled: YES | Avg CPU Load: 58.4% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response: 
+
+ARM (Advanced RISC Machine) and x86 (Intel x86) are two distinct architectures used in the design of microprocessors for various computing devices.
+
+1. Instruction Set Architecture (ISA): The x86 ISA is a complex CISC (Complex Instruction Set Computing) architecture, which supports a wide range of instructions and allows for direct manipulation of data. On the other hand, ARM is a RISC (Reduced Instruction Set Computing) architecture, featuring a smaller set of instructions but with each instruction performing a single function.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 50.73s
+Total Latency: 54.18s | TTFT: 3.391s
+Prompt Tokens: 20 | Prompt Eval Rate: 5.90 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.56 tokens/s
+Perplexity (PPL): 13.3499
+============================================================================================
+Hardware Summary: Avg Power: 7.18W | Peak Temp: 77.9°C | Peak RAM: 0.78GB
+Throttled: YES | Avg CPU Load: 58.6% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response: 
+
+The question asks how many sheep the farmer has left, not how many ran away. So, the farmer has 9 sheep left.
+
+Here's the reasoning:
+1. The total number of sheep is 17.
+2. All but 9 sheep ran away, which means 17 - 9 = 8 sheep ran away.
+3. However, the question asks for the number of sheep the farmer has left, not the number that ran away.
+4. Therefore, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 50.73s
+Total Latency: 51.31s | TTFT: 5.617s
+Prompt Tokens: 33 | Prompt Eval Rate: 5.88 tokens/s
+Generated Tokens: 116 | Token Gen Rate (TPS): 2.54 tokens/s
+Perplexity (PPL): 9.6236
+============================================================================================
+Hardware Summary: Avg Power: 7.29W | Peak Temp: 79.6°C | Peak RAM: 0.79GB
+Throttled: YES | Avg CPU Load: 60.6% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response: 
+
+An arithmetic series is a sequence of numbers in which the difference between any two consecutive terms is constant. The formula for the sum of an arithmetic series is given by:
+
+S = n * (a + l) / 2
+
+where:
+- S is the sum of the series,
+- n is the number of terms in the series,
+- a is the first term, and
+- l is the last term.
+
+To verify this formula for the integers 1 through 10, we first need to find the number of terms (n) and the last
+--------------------------------------------------------------------------------------------
+Model Load Duration: 50.73s
+Total Latency: 55.68s | TTFT: 4.757s
+Prompt Tokens: 28 | Prompt Eval Rate: 5.89 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.55 tokens/s
+Perplexity (PPL): 6.5488
+============================================================================================
+Hardware Summary: Avg Power: 7.25W | Peak Temp: 80.7°C | Peak RAM: 0.80GB
+Throttled: YES | Avg CPU Load: 59.5% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language. This means that Python code is executed line by line by an interpreter. Unlike compiled languages, there is no need to compile the code before running it. However, Python code can be compiled into bytecode, which is a lower-level representation of the code that can be executed by the Python interpreter. This bytecode is platform-independent and can be executed on any machine that has a compatible Python interpreter.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.65s
+Total Latency: 21.38s | TTFT: 0.968s
+Prompt Tokens: 8 | Prompt Eval Rate: 8.27 tokens/s
+Generated Tokens: 85 | Token Gen Rate (TPS): 4.16 tokens/s
+Perplexity (PPL): 58.4637
+============================================================================================
+Hardware Summary: Avg Power: 6.87W | Peak Temp: 70.8°C | Peak RAM: 0.84GB
+Throttled: YES | Avg CPU Load: 57.2% | Avg Clock: 2397.9MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  The story should contain exactly 4 paragraphs. Paragraphs should be separated with the markdown divider: *** In the distant reaches of the galaxy, there existed a deserted planet named Xeridia. This desolate world was covered in a thick layer of crimson dust, with jagged rocks and barren landscapes stretching as far as the eye could see. Amidst this desolation, a lone robot named Zephyr roamed, programmed to explore and catalog unknown territories. Zephyr's sensors detected an unusual anomaly beneath the crimson dust—a faint, rhythmic pulse emanating from beneath the surface.
+
+***
+
+Curious, Zephyr descended into the hidden cavity, its metallic
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.65s
+Total Latency: 32.90s | TTFT: 1.673s
+Prompt Tokens: 15 | Prompt Eval Rate: 8.97 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 4.10 tokens/s
+Perplexity (PPL): 15.2321
+============================================================================================
+Hardware Summary: Avg Power: 6.97W | Peak Temp: 74.1°C | Peak RAM: 0.87GB
+Throttled: YES | Avg CPU Load: 57.2% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  ARM architecture is designed for energy efficiency and is widely used in mobile devices, embedded systems, and IoT devices. ARM processors are based on a RISC (Reduced Instruction Set Computing) architecture, which means they have a smaller set of instructions that are executed quickly. This results in lower power consumption and heat generation, making ARM ideal for battery-powered devices. ARM processors are also highly customizable, allowing manufacturers to design chips tailored to specific applications and power requirements.
+
+On the other hand, x86 architecture is primarily used in desktop computers, laptops, and servers. x86 processors are based on a CISC (Complex Instruction Set Computing) architecture,
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.65s
+Total Latency: 33.07s | TTFT: 1.775s
+Prompt Tokens: 16 | Prompt Eval Rate: 9.01 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 4.09 tokens/s
+Perplexity (PPL): 47.5634
+============================================================================================
+Hardware Summary: Avg Power: 7.02W | Peak Temp: 75.7°C | Peak RAM: 0.89GB
+Throttled: YES | Avg CPU Load: 57.6% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  Let's break down the problem step by step:
+
+1. The farmer initially has 17 sheep.
+2. The phrase "all but 9 run away" means that 9 sheep did not run away.
+3. Therefore, the 9 sheep that did not run away are the ones the farmer has left.
+
+So, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.65s
+Total Latency: 21.09s | TTFT: 3.334s
+Prompt Tokens: 30 | Prompt Eval Rate: 9.00 tokens/s
+Generated Tokens: 72 | Token Gen Rate (TPS): 4.06 tokens/s
+Perplexity (PPL): 10.7726
+============================================================================================
+Hardware Summary: Avg Power: 7.24W | Peak Temp: 77.9°C | Peak RAM: 0.91GB
+Throttled: YES | Avg CPU Load: 62.1% | Avg Clock: 2398.6MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 512 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  To derive the formula for the sum of an arithmetic series, let's start with the definition of an arithmetic series. An arithmetic series is the sum of the terms of an arithmetic sequence, where each term after the first is obtained by adding a constant difference to the previous term.
+
+Let \( a \) be the first term of the arithmetic series, and \( d \) be the common difference. The \( n \)-th term of the series can be expressed as:
+\[ a_n = a + (n-1)d \]
+
+The sum \( S_n \) of the first \( n \) terms of the arithmetic series can be written
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.65s
+Total Latency: 33.95s | TTFT: 2.575s
+Prompt Tokens: 23 | Prompt Eval Rate: 8.93 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 4.08 tokens/s
+Perplexity (PPL): 27.3761
+============================================================================================
+Hardware Summary: Avg Power: 7.07W | Peak Temp: 78.5°C | Peak RAM: 0.92GB
+Throttled: YES | Avg CPU Load: 58.6% | Avg Clock: 2399.1MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language. This means that Python code is executed line by line, directly by the Python interpreter, without the need for a separate compilation step. However, Python code can be compiled into bytecode, which is a lower-level, platform-independent representation of the source code. This bytecode is then executed by the Python Virtual Machine (PVM), which is part of the Python runtime environment.
+
+The process of converting Python source code to bytecode typically involves the use of a tool like `py_compile` or `compileall`. For example, you can compile a Python file using the following command:
+
+```bash
+python -m
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.89s
+Total Latency: 61.85s | TTFT: 1.111s
+Prompt Tokens: 8 | Prompt Eval Rate: 7.20 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.11 tokens/s
+Perplexity (PPL): 12.2803
+============================================================================================
+Hardware Summary: Avg Power: 6.63W | Peak Temp: 73.0°C | Peak RAM: 0.92GB
+Throttled: YES | Avg CPU Load: 96.9% | Avg Clock: 2397.1MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  The response must contain exactly 4 bullet points using the markdown bullet points format, such as: * Bullet point 1. The word "robot" should appear at least 5 times. * In the vast emptiness of a deserted planet, a curious robot named Zeta stumbled upon a hidden garden, its sensors detecting vibrant colors and unusual scents.
+* As the robot explored further, it discovered that the garden was a sanctuary for various alien plants and creatures, each more fascinating than the last, and the robot recorded every detail meticulously.
+* The robot marveled at the intricate ecosystem, realizing that this garden was a rare and precious find
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.89s
+Total Latency: 63.44s | TTFT: 1.672s
+Prompt Tokens: 15 | Prompt Eval Rate: 8.97 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.07 tokens/s
+Perplexity (PPL): 4.9062
+============================================================================================
+Hardware Summary: Avg Power: 6.64W | Peak Temp: 75.2°C | Peak RAM: 0.99GB
+Throttled: YES | Avg CPU Load: 96.9% | Avg Clock: 2396.4MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  Your response should contain exactly 3 bullet points using the markdown bullet points format, such as: * Bullet point 1. ARM and x86 are two prominent architectures used in computing, each with distinct characteristics and applications. ARM, which stands for Advanced RISC Machine, is known for its power efficiency and is widely used in mobile devices, embedded systems, and IoT devices. It employs a Reduced Instruction Set Computing (RISC) approach, which simplifies the instruction set and allows for faster execution of instructions. This makes ARM processors ideal for battery-powered devices where energy efficiency is crucial.
+
+* x86, on the other hand, is a
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.89s
+Total Latency: 63.35s | TTFT: 1.669s
+Prompt Tokens: 16 | Prompt Eval Rate: 9.58 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.08 tokens/s
+Perplexity (PPL): 4.7586
+============================================================================================
+Hardware Summary: Avg Power: 6.76W | Peak Temp: 77.4°C | Peak RAM: 1.00GB
+Throttled: YES | Avg CPU Load: 97.3% | Avg Clock: 2395.6MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  Let's break down the problem step by step:
+
+1. The farmer starts with 17 sheep.
+2. The phrase "all but 9 run away" means that 9 sheep do not run away.
+3. Therefore, the 9 sheep that do not run away are the ones the farmer has left.
+
+So, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.89s
+Total Latency: 37.21s | TTFT: 2.379s
+Prompt Tokens: 30 | Prompt Eval Rate: 12.61 tokens/s
+Generated Tokens: 72 | Token Gen Rate (TPS): 2.07 tokens/s
+Perplexity (PPL): 4.6238
+============================================================================================
+Hardware Summary: Avg Power: 6.75W | Peak Temp: 77.9°C | Peak RAM: 1.02GB
+Throttled: YES | Avg CPU Load: 97.2% | Avg Clock: 2397.4MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  To derive the formula for the sum of an arithmetic series, let's start with the definition of an arithmetic series.
+
+An arithmetic series is the sum of the terms of an arithmetic sequence, where each term after the first is obtained by adding a constant difference \(d\) to the previous term. The \(n\)-th term of an arithmetic sequence can be written as:
+\[ a_n = a + (n-1)d \]
+where \(a\) is the first term and \(d\) is the common difference.
+
+The sum \(S_n\) of the first \(n\) terms of an arithmetic series can be written
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.89s
+Total Latency: 63.78s | TTFT: 2.133s
+Prompt Tokens: 23 | Prompt Eval Rate: 10.78 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.08 tokens/s
+Perplexity (PPL): 5.8307
+============================================================================================
+Hardware Summary: Avg Power: 6.73W | Peak Temp: 77.4°C | Peak RAM: 1.03GB
+Throttled: YES | Avg CPU Load: 97.4% | Avg Clock: 2397.2MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  
+
+Python is an interpreted language. It is executed line by line by an interpreter, which is a separate program that reads the Python source code and executes it. This means that the code is not compiled into machine code beforehand, but rather interpreted line by line.
+
+Here's a simple example of how Python interprets a line of code:
+
+```python
+x = 5
+print(x)
+```
+
+In this example, the interpreter reads the line of code, executes it, and then prints the result. This process is repeated for each line of code in the script.
+
+Python's interpretation is what makes it so easy to write and run scripts
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.85s
+Total Latency: 13.05s | TTFT: 0.347s
+Prompt Tokens: 9 | Prompt Eval Rate: 25.94 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 10.15 tokens/s
+Perplexity (PPL): 76.6425
+============================================================================================
+Hardware Summary: Avg Power: 6.45W | Peak Temp: 71.4°C | Peak RAM: 0.90GB
+Throttled: YES | Avg CPU Load: 94.5% | Avg Clock: 2392.8MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  While exploring the planet, the robot discovers a garden, and in doing so, it begins to understand the concept of life and its own existence.
+
+---
+
+Zeta-5, a sleek and efficient robot, had been exploring the desolate planet for hours. Its advanced sensors and scanners had revealed a barren landscape, devoid of any signs of life. But Zeta-5 was not one to be deterred. It had a curiosity that drove it forward, and a sense of wonder that it had never experienced before.
+
+As it wandered through the dusty terrain, Zeta-5 stumbled upon a strange structure. It was a large, metallic dome
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.85s
+Total Latency: 13.54s | TTFT: 0.563s
+Prompt Tokens: 16 | Prompt Eval Rate: 28.44 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 9.94 tokens/s
+Perplexity (PPL): 29.2636
+============================================================================================
+Hardware Summary: Avg Power: 6.83W | Peak Temp: 73.0°C | Peak RAM: 0.89GB
+Throttled: YES | Avg CPU Load: 95.7% | Avg Clock: 2391.9MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  The goal is to highlight the unique features and advantages of each architecture.
+
+The ARM (Advanced RISC Machines) architecture is a type of RISC (Reduced Instruction Set Computing) architecture that has gained popularity in recent years due to its power efficiency and low power consumption. One of the key differences between ARM and x86 architectures is their instruction set architecture. ARM's instruction set is designed to be highly pipelined, which allows for efficient use of resources and faster execution times. In contrast, x86's instruction set is more complex and has a higher number of instructions, which can lead to slower execution times and increased power consumption. Additionally
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.85s
+Total Latency: 13.55s | TTFT: 0.579s
+Prompt Tokens: 17 | Prompt Eval Rate: 29.34 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 9.94 tokens/s
+Perplexity (PPL): 23.3137
+============================================================================================
+Hardware Summary: Avg Power: 6.75W | Peak Temp: 74.7°C | Peak RAM: 0.90GB
+Throttled: YES | Avg CPU Load: 95.7% | Avg Clock: 2390.8MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  
+
+## Step 1: Determine the initial number of sheep the farmer has.
+The farmer initially has 17 sheep.
+
+## Step 2: Calculate the number of sheep that run away.
+All but 9 sheep run away. This means 17 - 9 = 8 sheep run away.
+
+## Step 3: Calculate the number of sheep the farmer has left.
+Since 8 sheep run away, the farmer has 17 - 8 = 9 sheep left.
+
+The final answer is: $\boxed{9}$
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.85s
+Total Latency: 11.84s | TTFT: 1.082s
+Prompt Tokens: 31 | Prompt Eval Rate: 28.65 tokens/s
+Generated Tokens: 107 | Token Gen Rate (TPS): 9.95 tokens/s
+Perplexity (PPL): 22.6259
+============================================================================================
+Hardware Summary: Avg Power: 6.76W | Peak Temp: 75.7°C | Peak RAM: 0.91GB
+Throttled: YES | Avg CPU Load: 96.1% | Avg Clock: 2384.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  The formula is \(S_{n}=\frac{n}{2}(a_{1}+a_{n})\), where \(S_{n}\) is the sum of the first \(n\) terms, \(a_{1}\) is the first term, \(a_{n}\) is the last term, and \(n\) is the number of terms.
+
+## Step 1: Define the arithmetic series formula
+The sum of an arithmetic series can be calculated using the formula \(S_{n} = \frac{n}{2}(a_{1} + a_{n})\), where \(S_{n}\)
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.85s
+Total Latency: 13.96s | TTFT: 0.906s
+Prompt Tokens: 24 | Prompt Eval Rate: 26.48 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 9.88 tokens/s
+Perplexity (PPL): 12.3311
+============================================================================================
+Hardware Summary: Avg Power: 6.68W | Peak Temp: 76.8°C | Peak RAM: 0.92GB
+Throttled: YES | Avg CPU Load: 95.9% | Avg Clock: 2394.3MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language, not a compiled one. This means that the Python interpreter reads and executes Python code line by line, rather than translating the code into machine code before execution.
+
+This is in contrast to compiled languages like C++ or Java, where the code is translated into machine code before it is executed. The machine code can then be run directly by the computer's processor, which can make compiled languages faster in some cases. However, interpreted languages like Python are often easier to use and more flexible, making them popular choices for many types of programming tasks.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 90.45s
+Total Latency: 172.16s | TTFT: 63.799s
+Prompt Tokens: 9 | Prompt Eval Rate: 0.14 tokens/s
+Generated Tokens: 121 | Token Gen Rate (TPS): 1.12 tokens/s
+Perplexity (PPL): 27.7122
+============================================================================================
+Hardware Summary: Avg Power: 5.20W | Peak Temp: 74.7°C | Peak RAM: 0.86GB
+Throttled: YES | Avg CPU Load: 58.3% | Avg Clock: 2102.2MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response: 
+
+In the vast expanse of the cosmos, a solitary robot named Orion wandered through the desolate landscape of a forgotten planet. Orion was an explorer, sent by humanity to seek out new worlds and civilizations. This planet, designated as X-47B, was supposed to be barren and lifeless, but Orion's sensors detected something unusual.
+
+As Orion approached the coordinates, it noticed a peculiar anomaly. A lush, vibrant garden, teeming with flora and fauna, appeared amidst the desolation. Orion, programmed to
+--------------------------------------------------------------------------------------------
+Model Load Duration: 90.45s
+Total Latency: 110.64s | TTFT: 3.561s
+Prompt Tokens: 18 | Prompt Eval Rate: 5.05 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 1.21 tokens/s
+Perplexity (PPL): 14.3792
+============================================================================================
+Hardware Summary: Avg Power: 7.06W | Peak Temp: 76.3°C | Peak RAM: 0.65GB
+Throttled: YES | Avg CPU Load: 97.5% | Avg Clock: 2398.3MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response: 
+
+ARM (Advanced RISC Machine) and x86 (Intel x86) are two distinct architectures used in the design of microprocessors and microcontrollers.
+
+1. Instruction Set and Architecture: The primary difference lies in their instruction set architecture (ISA). x86 is a CISC (Complex Instruction Set Computing) architecture, which means it supports a large number of complex instructions, allowing for direct manipulation of data and memory. On the other hand, ARM is a RISC (Reduced Instruction Set Computing) architecture, which means it
+--------------------------------------------------------------------------------------------
+Model Load Duration: 90.45s
+Total Latency: 113.89s | TTFT: 5.240s
+Prompt Tokens: 20 | Prompt Eval Rate: 3.82 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 1.20 tokens/s
+Perplexity (PPL): 13.6272
+============================================================================================
+Hardware Summary: Avg Power: 7.00W | Peak Temp: 76.8°C | Peak RAM: 0.65GB
+Throttled: YES | Avg CPU Load: 96.3% | Avg Clock: 2389.4MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response: 
+
+Here's the reasoning:
+1. The question states that a farmer has 17 sheep initially.
+2. Then it says that all but 9 run away. This means that 17 - 9 = 8 sheep ran away.
+3. However, the question asks for the number of sheep the farmer has left, not the number that ran away.
+4. Since the 9 sheep didn't run away, the farmer still has those 9 sheep.
+
+So, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 90.45s
+Total Latency: 103.37s | TTFT: 5.389s
+Prompt Tokens: 33 | Prompt Eval Rate: 6.12 tokens/s
+Generated Tokens: 116 | Token Gen Rate (TPS): 1.18 tokens/s
+Perplexity (PPL): 9.1975
+============================================================================================
+Hardware Summary: Avg Power: 7.10W | Peak Temp: 78.5°C | Peak RAM: 0.66GB
+Throttled: YES | Avg CPU Load: 97.3% | Avg Clock: 2396.1MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response: 
+
+To derive the formula for the sum of an arithmetic series, we can use the following steps:
+
+1. Let n be the number of terms in the series, a be the first term, and d be the common difference between consecutive terms.
+2. The nth term (an) can be found using the formula an = a + (n - 1)d.
+3. The sum (S) of the series can be found by adding all the terms: S = a + (a + d) + (a + 2d) + ... + (a + (n -
+--------------------------------------------------------------------------------------------
+Model Load Duration: 90.45s
+Total Latency: 112.66s | TTFT: 4.465s
+Prompt Tokens: 28 | Prompt Eval Rate: 6.27 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 1.20 tokens/s
+Perplexity (PPL): 6.6601
+============================================================================================
+Hardware Summary: Avg Power: 7.15W | Peak Temp: 79.0°C | Peak RAM: 0.65GB
+Throttled: YES | Avg CPU Load: 97.5% | Avg Clock: 2396.9MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  
+
+Python is an interpreted language. It is executed line by line, and the code is interpreted by an interpreter, which translates the code into machine code at runtime. This means that the Python interpreter does not need to compile the code beforehand, which makes it easier to write and maintain Python programs.
+
+Here's an example of how Python is executed:
+
+1. The Python interpreter reads the code from a file or a string.
+2. The interpreter translates the code into machine code.
+3. The machine code is executed by the computer's processor.
+
+In contrast, compiled languages are translated into machine code beforehand, which can result in faster execution times.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.81s
+Total Latency: 20.68s | TTFT: 0.295s
+Prompt Tokens: 9 | Prompt Eval Rate: 30.52 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 6.33 tokens/s
+Perplexity (PPL): 73.5381
+============================================================================================
+Hardware Summary: Avg Power: 6.25W | Peak Temp: 71.9°C | Peak RAM: 0.71GB
+Throttled: YES | Avg CPU Load: 95.5% | Avg Clock: 2390.9MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  A robot named Zeta-5, a member of an intergalactic exploration team, had been sent to explore the unknown reaches of the galaxy. As he ventured deeper into the desolate landscape, he stumbled upon a lush and vibrant garden, teeming with life and color.
+
+As Zeta-5 explored the garden, he marveled at the beauty and diversity of the flora and fauna that surrounded him. The garden was filled with towering trees, their trunks thick and gnarled, their leaves a kaleidoscope of greens and blues. The air was filled with the sweet scent of blooming flowers, and the soft chirping
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.81s
+Total Latency: 21.24s | TTFT: 0.555s
+Prompt Tokens: 16 | Prompt Eval Rate: 28.83 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 6.24 tokens/s
+Perplexity (PPL): 30.6344
+============================================================================================
+Hardware Summary: Avg Power: 6.28W | Peak Temp: 74.1°C | Peak RAM: 0.72GB
+Throttled: YES | Avg CPU Load: 96.3% | Avg Clock: 2388.7MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  The focus is on the differences in instruction set architecture (ISA), instruction-level parallelism (ILP), and memory access patterns.
+
+The ARM (Advanced RISC Machines) architecture is a RISC (Reduced Instruction Set Computing) architecture that has been widely adopted in mobile devices, servers, and other embedded systems. In contrast, the x86 architecture is a CISC (Complex Instruction Set Computing) architecture that has been widely used in personal computers, servers, and other high-performance computing applications. One of the key differences between the two architectures is their instruction set architecture (ISA). The ARM ISA is designed to be highly pipelined,
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.81s
+Total Latency: 21.38s | TTFT: 0.535s
+Prompt Tokens: 17 | Prompt Eval Rate: 31.76 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 6.19 tokens/s
+Perplexity (PPL): 25.0133
+============================================================================================
+Hardware Summary: Avg Power: 6.26W | Peak Temp: 74.7°C | Peak RAM: 0.72GB
+Throttled: YES | Avg CPU Load: 95.8% | Avg Clock: 2395.6MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  
+
+## Step 1: Determine the initial number of sheep the farmer has.
+The farmer initially has 17 sheep.
+
+## Step 2: Calculate the number of sheep that ran away.
+All but 9 sheep ran away. This means 17 - 9 = 8 sheep ran away.
+
+## Step 3: Calculate the number of sheep the farmer has left.
+To find the number of sheep the farmer has left, subtract the number of sheep that ran away from the initial number of sheep. So, 17 - 8 = 9.
+
+The final answer is: $\boxed{9}$
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.81s
+Total Latency: 20.63s | TTFT: 0.782s
+Prompt Tokens: 31 | Prompt Eval Rate: 39.63 tokens/s
+Generated Tokens: 123 | Token Gen Rate (TPS): 6.20 tokens/s
+Perplexity (PPL): 22.1960
+============================================================================================
+Hardware Summary: Avg Power: 6.50W | Peak Temp: 75.2°C | Peak RAM: 0.74GB
+Throttled: YES | Avg CPU Load: 96.2% | Avg Clock: 2389.3MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 512 | Thr: 4
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  The formula for the sum of an arithmetic series is given by S = n/2 * (a1 + an), where n is the number of terms, a1 is the first term, and an is the last term.
+
+## Step 1: Define the arithmetic series formula
+The arithmetic series formula is given by S = n/2 * (a1 + an), where n is the number of terms, a1 is the first term, and an is the last term.
+
+## Step 2: Identify the variables in the formula
+The variables in the formula are n (number of terms), a1 (first term),
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.81s
+Total Latency: 21.34s | TTFT: 0.687s
+Prompt Tokens: 24 | Prompt Eval Rate: 34.92 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 6.25 tokens/s
+Perplexity (PPL): 11.5672
+============================================================================================
+Hardware Summary: Avg Power: 6.42W | Peak Temp: 75.2°C | Peak RAM: 0.75GB
+Throttled: YES | Avg CPU Load: 96.1% | Avg Clock: 2388.7MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language, not a compiled one. This means that the Python interpreter reads and executes Python code line by line, rather than translating the code into machine code before execution. This allows for faster development and easier debugging, but can result in slower execution times compared to compiled languages like C or Java.
+
+Python code is executed by the Python interpreter, which reads the code and translates it into bytecode that can be executed by the Python Virtual Machine (PVM). The PVM is a part of the Python runtime environment that manages the execution of Python code.
+
+In contrast,
+--------------------------------------------------------------------------------------------
+Model Load Duration: 54.38s
+Total Latency: 64.20s | TTFT: 1.904s
+Prompt Tokens: 9 | Prompt Eval Rate: 4.73 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.09 tokens/s
+Perplexity (PPL): 24.9705
+============================================================================================
+Hardware Summary: Avg Power: 6.91W | Peak Temp: 74.1°C | Peak RAM: 0.86GB
+Throttled: YES | Avg CPU Load: 97.0% | Avg Clock: 2397.5MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response: 
+
+In the vast expanse of the cosmos, a lone robot named Orion wandered through the desolate landscape of a forgotten planet. Orion was an exploratory unit, programmed to seek out life and resources in the uncharted corners of the universe. His mission was long and arduous, but he was equipped with a relentless drive and an insatiable curiosity that fueled his journey.
+
+One day, as Orion trudged through the endless dunes of sand, his sensors detected something unusual. A faint green glow emanated from a nearby hill, and his
+--------------------------------------------------------------------------------------------
+Model Load Duration: 54.38s
+Total Latency: 66.97s | TTFT: 3.081s
+Prompt Tokens: 18 | Prompt Eval Rate: 5.84 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.03 tokens/s
+Perplexity (PPL): 14.0832
+============================================================================================
+Hardware Summary: Avg Power: 7.07W | Peak Temp: 77.4°C | Peak RAM: 0.88GB
+Throttled: YES | Avg CPU Load: 97.3% | Avg Clock: 2396.9MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response: 
+
+ARM (Advanced RISC Machine) and x86 (Intel x86) are two distinct architectures used in the design of microprocessors for various computing devices.
+
+1. Instruction Set Architecture (ISA): The x86 ISA is a complex CISC (Complex Instruction Set Computing) architecture, which supports a wide range of instructions and allows for direct manipulation of data. On the other hand, ARM is a RISC (Reduced Instruction Set Computing) architecture, featuring a smaller set of instructions but with each instruction performing a single function.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 54.38s
+Total Latency: 67.12s | TTFT: 3.405s
+Prompt Tokens: 20 | Prompt Eval Rate: 5.87 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.04 tokens/s
+Perplexity (PPL): 13.3499
+============================================================================================
+Hardware Summary: Avg Power: 7.03W | Peak Temp: 79.0°C | Peak RAM: 0.87GB
+Throttled: YES | Avg CPU Load: 97.4% | Avg Clock: 2395.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response: 
+
+The question asks how many sheep the farmer has left, not how many ran away. So, the farmer has 9 sheep left.
+
+Here's the reasoning:
+1. The total number of sheep is 17.
+2. All but 9 sheep ran away, which means 17 - 9 = 8 sheep ran away.
+3. However, the question asks for the number of sheep the farmer has left, not the number that ran away.
+4. Therefore, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 54.38s
+Total Latency: 63.18s | TTFT: 5.583s
+Prompt Tokens: 33 | Prompt Eval Rate: 5.91 tokens/s
+Generated Tokens: 116 | Token Gen Rate (TPS): 2.01 tokens/s
+Perplexity (PPL): 9.6236
+============================================================================================
+Hardware Summary: Avg Power: 7.06W | Peak Temp: 80.1°C | Peak RAM: 0.88GB
+Throttled: YES | Avg CPU Load: 97.2% | Avg Clock: 2395.4MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response: 
+
+An arithmetic series is a sequence of numbers in which the difference between any two consecutive terms is constant. The formula for the sum of an arithmetic series is given by:
+
+S = n * (a + l) / 2
+
+where:
+- S is the sum of the series,
+- n is the number of terms in the series,
+- a is the first term, and
+- l is the last term.
+
+To verify this formula for the integers 1 through 10, we first need to find the number of terms (n) and the last
+--------------------------------------------------------------------------------------------
+Model Load Duration: 54.38s
+Total Latency: 68.50s | TTFT: 4.796s
+Prompt Tokens: 28 | Prompt Eval Rate: 5.84 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.04 tokens/s
+Perplexity (PPL): 6.5488
+============================================================================================
+Hardware Summary: Avg Power: 7.13W | Peak Temp: 81.2°C | Peak RAM: 0.89GB
+Throttled: YES | Avg CPU Load: 97.4% | Avg Clock: 2395.6MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language. This means that Python code is executed line by line by an interpreter. Unlike compiled languages, there is no need to compile the code before running it. However, Python code can be compiled into bytecode, which is a lower-level representation of the code that can be executed by the Python interpreter. This bytecode is platform-independent and can be executed on any machine that has a compatible Python interpreter.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.58s
+Total Latency: 25.94s | TTFT: 0.938s
+Prompt Tokens: 8 | Prompt Eval Rate: 8.53 tokens/s
+Generated Tokens: 85 | Token Gen Rate (TPS): 3.40 tokens/s
+Perplexity (PPL): 58.4637
+============================================================================================
+Hardware Summary: Avg Power: 6.60W | Peak Temp: 73.0°C | Peak RAM: 0.91GB
+Throttled: YES | Avg CPU Load: 96.0% | Avg Clock: 2396.9MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  The story should contain exactly 4 paragraphs. Paragraphs should be separated with the markdown divider: *** In the distant reaches of the galaxy, there existed a deserted planet named Xeridia. This desolate world was covered in a thick layer of crimson dust, with jagged rocks and barren landscapes stretching as far as the eye could see. Amidst this desolation, a lone robot named Zephyr roamed, programmed to explore and catalog unknown territories. Zephyr's sensors detected an unusual anomaly beneath the crimson dust—a faint, rhythmic pulse emanating from beneath the surface.
+
+***
+
+Curious, Zephyr descended into the hidden cavity, its metallic
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.58s
+Total Latency: 40.29s | TTFT: 1.709s
+Prompt Tokens: 15 | Prompt Eval Rate: 8.78 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 3.32 tokens/s
+Perplexity (PPL): 15.2321
+============================================================================================
+Hardware Summary: Avg Power: 6.83W | Peak Temp: 75.2°C | Peak RAM: 0.95GB
+Throttled: YES | Avg CPU Load: 96.5% | Avg Clock: 2392.5MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  ARM architecture is designed for energy efficiency and is widely used in mobile devices, embedded systems, and IoT devices. ARM processors are based on a RISC (Reduced Instruction Set Computing) architecture, which means they have a smaller set of instructions that are executed quickly. This results in lower power consumption and heat generation, making ARM ideal for battery-powered devices. ARM processors are also highly customizable, allowing manufacturers to design chips tailored to specific applications and power requirements.
+
+On the other hand, x86 architecture is primarily used in desktop computers, laptops, and servers. x86 processors are based on a CISC (Complex Instruction Set Computing) architecture,
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.58s
+Total Latency: 40.00s | TTFT: 1.770s
+Prompt Tokens: 16 | Prompt Eval Rate: 9.04 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 3.35 tokens/s
+Perplexity (PPL): 47.5634
+============================================================================================
+Hardware Summary: Avg Power: 6.98W | Peak Temp: 78.5°C | Peak RAM: 0.98GB
+Throttled: YES | Avg CPU Load: 96.8% | Avg Clock: 2394.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  Let's break down the problem step by step:
+
+1. The farmer initially has 17 sheep.
+2. The phrase "all but 9 run away" means that 9 sheep did not run away.
+3. Therefore, the 9 sheep that did not run away are the ones the farmer has left.
+
+So, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.58s
+Total Latency: 25.16s | TTFT: 3.338s
+Prompt Tokens: 30 | Prompt Eval Rate: 8.99 tokens/s
+Generated Tokens: 72 | Token Gen Rate (TPS): 3.30 tokens/s
+Perplexity (PPL): 10.7726
+============================================================================================
+Hardware Summary: Avg Power: 7.03W | Peak Temp: 79.6°C | Peak RAM: 1.00GB
+Throttled: YES | Avg CPU Load: 96.7% | Avg Clock: 2395.6MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 512 | Thr: 4
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  To derive the formula for the sum of an arithmetic series, let's start with the definition of an arithmetic series. An arithmetic series is the sum of the terms of an arithmetic sequence, where each term after the first is obtained by adding a constant difference to the previous term.
+
+Let \( a \) be the first term of the arithmetic series, and \( d \) be the common difference. The \( n \)-th term of the series can be expressed as:
+\[ a_n = a + (n-1)d \]
+
+The sum \( S_n \) of the first \( n \) terms of the arithmetic series can be written
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.58s
+Total Latency: 40.89s | TTFT: 2.554s
+Prompt Tokens: 23 | Prompt Eval Rate: 9.00 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 3.34 tokens/s
+Perplexity (PPL): 27.3761
+============================================================================================
+Hardware Summary: Avg Power: 6.93W | Peak Temp: 79.6°C | Peak RAM: 1.00GB
+Throttled: YES | Avg CPU Load: 96.8% | Avg Clock: 2394.2MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language. This means that Python code is executed line by line, directly by the Python interpreter, without the need for a separate compilation step. However, Python code can be compiled into bytecode, which is a lower-level, platform-independent representation of the source code. This bytecode is then executed by the Python Virtual Machine (PVM), which is part of the Python runtime environment.
+
+The process of converting Python source code to bytecode typically involves the use of a tool like `py_compile` or `compileall`. For example, you can compile a Python file using the following command:
+
+```bash
+python -m
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.93s
+Total Latency: 47.79s | TTFT: 1.130s
+Prompt Tokens: 8 | Prompt Eval Rate: 7.08 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.74 tokens/s
+Perplexity (PPL): 12.2803
+============================================================================================
+Hardware Summary: Avg Power: 6.60W | Peak Temp: 71.9°C | Peak RAM: 1.11GB
+Throttled: YES | Avg CPU Load: 57.6% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  The response must contain exactly 4 bullet points using the markdown bullet points format, such as: * Bullet point 1. The word "robot" should appear at least 5 times. * In the vast emptiness of a deserted planet, a curious robot named Zeta stumbled upon a hidden garden, its sensors detecting vibrant colors and unusual scents.
+* As the robot explored further, it discovered that the garden was a sanctuary for various alien plants and creatures, each more fascinating than the last, and the robot recorded every detail meticulously.
+* The robot marveled at the intricate ecosystem, realizing that this garden was a rare and precious find
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.93s
+Total Latency: 48.55s | TTFT: 1.235s
+Prompt Tokens: 15 | Prompt Eval Rate: 12.15 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.71 tokens/s
+Perplexity (PPL): 4.9062
+============================================================================================
+Hardware Summary: Avg Power: 6.65W | Peak Temp: 74.7°C | Peak RAM: 1.12GB
+Throttled: YES | Avg CPU Load: 57.8% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  Your response should contain exactly 3 bullet points using the markdown bullet points format, such as: * Bullet point 1. ARM and x86 are two prominent architectures used in computing, each with distinct characteristics and applications. ARM, which stands for Advanced RISC Machine, is known for its power efficiency and is widely used in mobile devices, embedded systems, and IoT devices. It employs a Reduced Instruction Set Computing (RISC) approach, which simplifies the instruction set and allows for faster execution of instructions. This makes ARM processors ideal for battery-powered devices where energy efficiency is crucial.
+
+* x86, on the other hand, is a
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.93s
+Total Latency: 49.09s | TTFT: 1.715s
+Prompt Tokens: 16 | Prompt Eval Rate: 9.33 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.70 tokens/s
+Perplexity (PPL): 4.7586
+============================================================================================
+Hardware Summary: Avg Power: 6.71W | Peak Temp: 75.7°C | Peak RAM: 1.14GB
+Throttled: YES | Avg CPU Load: 58.2% | Avg Clock: 2399.7MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  Let's break down the problem step by step:
+
+1. The farmer starts with 17 sheep.
+2. The phrase "all but 9 run away" means that 9 sheep do not run away.
+3. Therefore, the 9 sheep that do not run away are the ones the farmer has left.
+
+So, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.93s
+Total Latency: 29.12s | TTFT: 2.317s
+Prompt Tokens: 30 | Prompt Eval Rate: 12.95 tokens/s
+Generated Tokens: 72 | Token Gen Rate (TPS): 2.69 tokens/s
+Perplexity (PPL): 4.6238
+============================================================================================
+Hardware Summary: Avg Power: 6.73W | Peak Temp: 76.8°C | Peak RAM: 1.15GB
+Throttled: YES | Avg CPU Load: 60.0% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  To derive the formula for the sum of an arithmetic series, let's start with the definition of an arithmetic series.
+
+An arithmetic series is the sum of the terms of an arithmetic sequence, where each term after the first is obtained by adding a constant difference \(d\) to the previous term. The \(n\)-th term of an arithmetic sequence can be written as:
+\[ a_n = a + (n-1)d \]
+where \(a\) is the first term and \(d\) is the common difference.
+
+The sum \(S_n\) of the first \(n\) terms of an arithmetic series can be written
+--------------------------------------------------------------------------------------------
+Model Load Duration: 47.93s
+Total Latency: 49.52s | TTFT: 2.136s
+Prompt Tokens: 23 | Prompt Eval Rate: 10.77 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.70 tokens/s
+Perplexity (PPL): 5.8307
+============================================================================================
+Hardware Summary: Avg Power: 6.73W | Peak Temp: 76.8°C | Peak RAM: 1.16GB
+Throttled: YES | Avg CPU Load: 58.6% | Avg Clock: 2399.7MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  
+
+Python is an interpreted language. It is executed line by line by an interpreter, which is a separate program that reads the Python source code and executes it. This means that the code is not compiled into machine code beforehand, but rather interpreted line by line.
+
+Here's a simple example of how Python interprets a line of code:
+
+```python
+x = 5
+print(x)
+```
+
+In this example, the interpreter reads the line of code, executes it, and then prints the result. This process is repeated for each line of code in the script.
+
+Python's interpretation is what makes it so easy to write and run scripts
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.94s
+Total Latency: 10.51s | TTFT: 0.374s
+Prompt Tokens: 9 | Prompt Eval Rate: 24.08 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 12.73 tokens/s
+Perplexity (PPL): 76.6425
+============================================================================================
+Hardware Summary: Avg Power: 6.64W | Peak Temp: 70.3°C | Peak RAM: 0.92GB
+Throttled: YES | Avg CPU Load: 56.0% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  While exploring the planet, the robot discovers a garden, and in doing so, it begins to understand the concept of life and its own existence.
+
+---
+
+Zeta-5, a sleek and efficient robot, had been exploring the desolate planet for hours. Its advanced sensors and scanners had revealed a barren landscape, devoid of any signs of life. But Zeta-5 was not one to be deterred. It had a curiosity that drove it forward, and a sense of wonder that it had never experienced before.
+
+As it wandered through the dusty terrain, Zeta-5 stumbled upon a strange structure. It was a large, metallic dome
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.94s
+Total Latency: 10.84s | TTFT: 0.555s
+Prompt Tokens: 16 | Prompt Eval Rate: 28.83 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 12.54 tokens/s
+Perplexity (PPL): 29.2636
+============================================================================================
+Hardware Summary: Avg Power: 6.88W | Peak Temp: 72.5°C | Peak RAM: 0.95GB
+Throttled: YES | Avg CPU Load: 56.3% | Avg Clock: 2397.2MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  The goal is to highlight the unique features and advantages of each architecture.
+
+The ARM (Advanced RISC Machines) architecture is a type of RISC (Reduced Instruction Set Computing) architecture that has gained popularity in recent years due to its power efficiency and low power consumption. One of the key differences between ARM and x86 architectures is their instruction set architecture. ARM's instruction set is designed to be highly pipelined, which allows for efficient use of resources and faster execution times. In contrast, x86's instruction set is more complex and has a higher number of instructions, which can lead to slower execution times and increased power consumption. Additionally
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.94s
+Total Latency: 11.06s | TTFT: 0.601s
+Prompt Tokens: 17 | Prompt Eval Rate: 28.27 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 12.34 tokens/s
+Perplexity (PPL): 23.3137
+============================================================================================
+Hardware Summary: Avg Power: 6.88W | Peak Temp: 74.1°C | Peak RAM: 0.92GB
+Throttled: YES | Avg CPU Load: 57.4% | Avg Clock: 2398.7MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  
+
+## Step 1: Determine the initial number of sheep the farmer has.
+The farmer initially has 17 sheep.
+
+## Step 2: Calculate the number of sheep that run away.
+All but 9 sheep run away. This means 17 - 9 = 8 sheep run away.
+
+## Step 3: Calculate the number of sheep the farmer has left.
+Since 8 sheep run away, the farmer has 17 - 8 = 9 sheep left.
+
+The final answer is: $\boxed{9}$
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.94s
+Total Latency: 9.89s | TTFT: 1.082s
+Prompt Tokens: 31 | Prompt Eval Rate: 28.66 tokens/s
+Generated Tokens: 107 | Token Gen Rate (TPS): 12.14 tokens/s
+Perplexity (PPL): 22.6259
+============================================================================================
+Hardware Summary: Avg Power: 7.02W | Peak Temp: 74.7°C | Peak RAM: 0.93GB
+Throttled: YES | Avg CPU Load: 59.7% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  The formula is \(S_{n}=\frac{n}{2}(a_{1}+a_{n})\), where \(S_{n}\) is the sum of the first \(n\) terms, \(a_{1}\) is the first term, \(a_{n}\) is the last term, and \(n\) is the number of terms.
+
+## Step 1: Define the arithmetic series formula
+The sum of an arithmetic series can be calculated using the formula \(S_{n} = \frac{n}{2}(a_{1} + a_{n})\), where \(S_{n}\)
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.94s
+Total Latency: 11.47s | TTFT: 0.911s
+Prompt Tokens: 24 | Prompt Eval Rate: 26.36 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 12.21 tokens/s
+Perplexity (PPL): 12.3311
+============================================================================================
+Hardware Summary: Avg Power: 6.98W | Peak Temp: 75.7°C | Peak RAM: 0.93GB
+Throttled: YES | Avg CPU Load: 58.4% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language, not a compiled one. This means that the Python interpreter reads and executes Python code line by line, rather than translating the code into machine code before execution.
+
+This is in contrast to compiled languages like C++ or Java, where the code is translated into machine code before it is executed. The machine code can then be run directly by the computer's processor, which can make compiled languages faster in some cases. However, interpreted languages like Python are often easier to use and more flexible, making them popular choices for many types of programming tasks.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 92.75s
+Total Latency: 183.98s | TTFT: 93.966s
+Prompt Tokens: 9 | Prompt Eval Rate: 0.10 tokens/s
+Generated Tokens: 121 | Token Gen Rate (TPS): 1.34 tokens/s
+Perplexity (PPL): 27.7122
+============================================================================================
+Hardware Summary: Avg Power: 4.50W | Peak Temp: 71.4°C | Peak RAM: 0.90GB
+Throttled: YES | Avg CPU Load: 29.9% | Avg Clock: 2018.5MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response: 
+
+In the vast expanse of the cosmos, a solitary robot named Orion wandered through the desolate landscape of a forgotten planet. Orion was an explorer, sent by humanity to seek out new worlds and civilizations. This planet, designated as X-47B, was supposed to be barren and lifeless, but Orion's sensors detected something unusual.
+
+As Orion approached the coordinates, it noticed a peculiar anomaly. A lush, vibrant garden, teeming with flora and fauna, appeared amidst the desolation. Orion, programmed to
+--------------------------------------------------------------------------------------------
+Model Load Duration: 92.75s
+Total Latency: 108.77s | TTFT: 12.160s
+Prompt Tokens: 18 | Prompt Eval Rate: 1.48 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 1.35 tokens/s
+Perplexity (PPL): 14.3792
+============================================================================================
+Hardware Summary: Avg Power: 6.03W | Peak Temp: 71.9°C | Peak RAM: 0.72GB
+Throttled: YES | Avg CPU Load: 53.8% | Avg Clock: 2304.5MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response: 
+
+ARM (Advanced RISC Machine) and x86 (Intel x86) are two distinct architectures used in the design of microprocessors and microcontrollers.
+
+1. Instruction Set and Architecture: The primary difference lies in their instruction set architecture (ISA). x86 is a CISC (Complex Instruction Set Computing) architecture, which means it supports a large number of complex instructions, allowing for direct manipulation of data and memory. On the other hand, ARM is a RISC (Reduced Instruction Set Computing) architecture, which means it
+--------------------------------------------------------------------------------------------
+Model Load Duration: 92.75s
+Total Latency: 109.59s | TTFT: 8.655s
+Prompt Tokens: 20 | Prompt Eval Rate: 2.31 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 1.29 tokens/s
+Perplexity (PPL): 13.6272
+============================================================================================
+Hardware Summary: Avg Power: 6.14W | Peak Temp: 73.0°C | Peak RAM: 0.73GB
+Throttled: YES | Avg CPU Load: 56.2% | Avg Clock: 2321.3MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response: 
+
+Here's the reasoning:
+1. The question states that a farmer has 17 sheep initially.
+2. Then it says that all but 9 run away. This means that 17 - 9 = 8 sheep ran away.
+3. However, the question asks for the number of sheep the farmer has left, not the number that ran away.
+4. Since the 9 sheep didn't run away, the farmer still has those 9 sheep.
+
+So, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 92.75s
+Total Latency: 129.82s | TTFT: 12.872s
+Prompt Tokens: 33 | Prompt Eval Rate: 2.56 tokens/s
+Generated Tokens: 116 | Token Gen Rate (TPS): 0.99 tokens/s
+Perplexity (PPL): 9.1975
+============================================================================================
+Hardware Summary: Avg Power: 5.46W | Peak Temp: 73.6°C | Peak RAM: 0.75GB
+Throttled: YES | Avg CPU Load: 46.7% | Avg Clock: 2203.5MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response: 
+
+To derive the formula for the sum of an arithmetic series, we can use the following steps:
+
+1. Let n be the number of terms in the series, a be the first term, and d be the common difference between consecutive terms.
+2. The nth term (an) can be found using the formula an = a + (n - 1)d.
+3. The sum (S) of the series can be found by adding all the terms: S = a + (a + d) + (a + 2d) + ... + (a + (n -
+--------------------------------------------------------------------------------------------
+Model Load Duration: 92.75s
+Total Latency: 128.31s | TTFT: 14.240s
+Prompt Tokens: 28 | Prompt Eval Rate: 1.97 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 1.14 tokens/s
+Perplexity (PPL): 6.6601
+============================================================================================
+Hardware Summary: Avg Power: 5.54W | Peak Temp: 71.9°C | Peak RAM: 0.76GB
+Throttled: YES | Avg CPU Load: 45.3% | Avg Clock: 2212.4MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  
+
+Python is an interpreted language. It is executed line by line, and the code is interpreted by an interpreter, which translates the code into machine code at runtime. This means that the Python interpreter does not need to compile the code beforehand, which makes it easier to write and maintain Python programs.
+
+Here's an example of how Python is executed:
+
+1. The Python interpreter reads the code from a file or a string.
+2. The interpreter translates the code into machine code.
+3. The machine code is executed by the computer's processor.
+
+In contrast, compiled languages are translated into machine code beforehand, which can result in faster execution times.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.90s
+Total Latency: 15.11s | TTFT: 0.312s
+Prompt Tokens: 9 | Prompt Eval Rate: 28.80 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 8.72 tokens/s
+Perplexity (PPL): 73.5381
+============================================================================================
+Hardware Summary: Avg Power: 6.62W | Peak Temp: 68.6°C | Peak RAM: 0.73GB
+Throttled: YES | Avg CPU Load: 57.3% | Avg Clock: 2391.8MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  A robot named Zeta-5, a member of an intergalactic exploration team, had been sent to explore the unknown reaches of the galaxy. As he ventured deeper into the desolate landscape, he stumbled upon a lush and vibrant garden, teeming with life and color.
+
+As Zeta-5 explored the garden, he marveled at the beauty and diversity of the flora and fauna that surrounded him. The garden was filled with towering trees, their trunks thick and gnarled, their leaves a kaleidoscope of greens and blues. The air was filled with the sweet scent of blooming flowers, and the soft chirping
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.90s
+Total Latency: 15.33s | TTFT: 0.585s
+Prompt Tokens: 16 | Prompt Eval Rate: 27.33 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 8.75 tokens/s
+Perplexity (PPL): 30.6344
+============================================================================================
+Hardware Summary: Avg Power: 6.66W | Peak Temp: 69.7°C | Peak RAM: 0.76GB
+Throttled: YES | Avg CPU Load: 57.3% | Avg Clock: 2390.9MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  The focus is on the differences in instruction set architecture (ISA), instruction-level parallelism (ILP), and memory access patterns.
+
+The ARM (Advanced RISC Machines) architecture is a RISC (Reduced Instruction Set Computing) architecture that has been widely adopted in mobile devices, servers, and other embedded systems. In contrast, the x86 architecture is a CISC (Complex Instruction Set Computing) architecture that has been widely used in personal computers, servers, and other high-performance computing applications. One of the key differences between the two architectures is their instruction set architecture (ISA). The ARM ISA is designed to be highly pipelined,
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.90s
+Total Latency: 15.35s | TTFT: 0.541s
+Prompt Tokens: 17 | Prompt Eval Rate: 31.39 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 8.71 tokens/s
+Perplexity (PPL): 25.0133
+============================================================================================
+Hardware Summary: Avg Power: 6.70W | Peak Temp: 70.8°C | Peak RAM: 0.78GB
+Throttled: YES | Avg CPU Load: 57.8% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  
+
+## Step 1: Determine the initial number of sheep the farmer has.
+The farmer initially has 17 sheep.
+
+## Step 2: Calculate the number of sheep that ran away.
+All but 9 sheep ran away. This means 17 - 9 = 8 sheep ran away.
+
+## Step 3: Calculate the number of sheep the farmer has left.
+To find the number of sheep the farmer has left, subtract the number of sheep that ran away from the initial number of sheep. So, 17 - 8 = 9.
+
+The final answer is: $\boxed{9}$
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.90s
+Total Latency: 15.44s | TTFT: 0.881s
+Prompt Tokens: 31 | Prompt Eval Rate: 35.17 tokens/s
+Generated Tokens: 123 | Token Gen Rate (TPS): 8.45 tokens/s
+Perplexity (PPL): 22.1960
+============================================================================================
+Hardware Summary: Avg Power: 6.71W | Peak Temp: 73.0°C | Peak RAM: 0.79GB
+Throttled: YES | Avg CPU Load: 58.6% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 2048 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  The formula for the sum of an arithmetic series is given by S = n/2 * (a1 + an), where n is the number of terms, a1 is the first term, and an is the last term.
+
+## Step 1: Define the arithmetic series formula
+The arithmetic series formula is given by S = n/2 * (a1 + an), where n is the number of terms, a1 is the first term, and an is the last term.
+
+## Step 2: Identify the variables in the formula
+The variables in the formula are n (number of terms), a1 (first term),
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.90s
+Total Latency: 15.95s | TTFT: 0.700s
+Prompt Tokens: 24 | Prompt Eval Rate: 34.27 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 8.46 tokens/s
+Perplexity (PPL): 11.5672
+============================================================================================
+Hardware Summary: Avg Power: 6.64W | Peak Temp: 72.5°C | Peak RAM: 0.80GB
+Throttled: YES | Avg CPU Load: 58.7% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language, not a compiled one. This means that the Python interpreter reads and executes Python code line by line, rather than translating the code into machine code before execution. This allows for faster development and easier debugging, but can result in slower execution times compared to compiled languages like C or Java.
+
+Python code is executed by the Python interpreter, which reads the code and translates it into bytecode that can be executed by the Python Virtual Machine (PVM). The PVM is a part of the Python runtime environment that manages the execution of Python code.
+
+In contrast,
+--------------------------------------------------------------------------------------------
+Model Load Duration: 51.64s
+Total Latency: 51.41s | TTFT: 1.649s
+Prompt Tokens: 9 | Prompt Eval Rate: 5.46 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.61 tokens/s
+Perplexity (PPL): 24.9705
+============================================================================================
+Hardware Summary: Avg Power: 7.04W | Peak Temp: 73.0°C | Peak RAM: 0.90GB
+Throttled: YES | Avg CPU Load: 57.1% | Avg Clock: 2398.5MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response: 
+
+In the vast expanse of the cosmos, a lone robot named Orion wandered through the desolate landscape of a forgotten planet. Orion was an exploratory unit, programmed to seek out life and resources in the uncharted corners of the universe. His mission was long and arduous, but he was equipped with a relentless drive and an insatiable curiosity that fueled his journey.
+
+One day, as Orion trudged through the endless dunes of sand, his sensors detected something unusual. A faint green glow emanated from a nearby hill, and his
+--------------------------------------------------------------------------------------------
+Model Load Duration: 51.64s
+Total Latency: 54.41s | TTFT: 3.076s
+Prompt Tokens: 18 | Prompt Eval Rate: 5.85 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.53 tokens/s
+Perplexity (PPL): 14.0832
+============================================================================================
+Hardware Summary: Avg Power: 7.11W | Peak Temp: 77.4°C | Peak RAM: 0.90GB
+Throttled: YES | Avg CPU Load: 58.4% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response: 
+
+ARM (Advanced RISC Machine) and x86 (Intel x86) are two distinct architectures used in the design of microprocessors for various computing devices.
+
+1. Instruction Set Architecture (ISA): The x86 ISA is a complex CISC (Complex Instruction Set Computing) architecture, which supports a wide range of instructions and allows for direct manipulation of data. On the other hand, ARM is a RISC (Reduced Instruction Set Computing) architecture, featuring a smaller set of instructions but with each instruction performing a single function.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 51.64s
+Total Latency: 54.99s | TTFT: 3.497s
+Prompt Tokens: 20 | Prompt Eval Rate: 5.72 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.52 tokens/s
+Perplexity (PPL): 13.3499
+============================================================================================
+Hardware Summary: Avg Power: 7.16W | Peak Temp: 78.5°C | Peak RAM: 0.91GB
+Throttled: YES | Avg CPU Load: 58.7% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response: 
+
+The question asks how many sheep the farmer has left, not how many ran away. So, the farmer has 9 sheep left.
+
+Here's the reasoning:
+1. The total number of sheep is 17.
+2. All but 9 sheep ran away, which means 17 - 9 = 8 sheep ran away.
+3. However, the question asks for the number of sheep the farmer has left, not the number that ran away.
+4. Therefore, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 51.64s
+Total Latency: 52.00s | TTFT: 5.758s
+Prompt Tokens: 33 | Prompt Eval Rate: 5.73 tokens/s
+Generated Tokens: 116 | Token Gen Rate (TPS): 2.51 tokens/s
+Perplexity (PPL): 9.6236
+============================================================================================
+Hardware Summary: Avg Power: 7.25W | Peak Temp: 79.6°C | Peak RAM: 0.93GB
+Throttled: YES | Avg CPU Load: 60.7% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response: 
+
+An arithmetic series is a sequence of numbers in which the difference between any two consecutive terms is constant. The formula for the sum of an arithmetic series is given by:
+
+S = n * (a + l) / 2
+
+where:
+- S is the sum of the series,
+- n is the number of terms in the series,
+- a is the first term, and
+- l is the last term.
+
+To verify this formula for the integers 1 through 10, we first need to find the number of terms (n) and the last
+--------------------------------------------------------------------------------------------
+Model Load Duration: 51.64s
+Total Latency: 56.26s | TTFT: 4.741s
+Prompt Tokens: 28 | Prompt Eval Rate: 5.91 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.52 tokens/s
+Perplexity (PPL): 6.5488
+============================================================================================
+Hardware Summary: Avg Power: 7.25W | Peak Temp: 80.1°C | Peak RAM: 0.94GB
+Throttled: YES | Avg CPU Load: 59.8% | Avg Clock: 2399.8MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language. This means that Python code is executed line by line by an interpreter. Unlike compiled languages, there is no need to compile the code before running it. However, Python code can be compiled into bytecode, which is a lower-level representation of the code that can be executed by the Python interpreter. This bytecode is platform-independent and can be executed on any machine that has a compatible Python interpreter.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.70s
+Total Latency: 21.36s | TTFT: 0.946s
+Prompt Tokens: 8 | Prompt Eval Rate: 8.45 tokens/s
+Generated Tokens: 85 | Token Gen Rate (TPS): 4.16 tokens/s
+Perplexity (PPL): 58.4637
+============================================================================================
+Hardware Summary: Avg Power: 6.81W | Peak Temp: 70.3°C | Peak RAM: 0.98GB
+Throttled: YES | Avg CPU Load: 56.8% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  The story should contain exactly 4 paragraphs. Paragraphs should be separated with the markdown divider: *** In the distant reaches of the galaxy, there existed a deserted planet named Xeridia. This desolate world was covered in a thick layer of crimson dust, with jagged rocks and barren landscapes stretching as far as the eye could see. Amidst this desolation, a lone robot named Zephyr roamed, programmed to explore and catalog unknown territories. Zephyr's sensors detected an unusual anomaly beneath the crimson dust—a faint, rhythmic pulse emanating from beneath the surface.
+
+***
+
+Curious, Zephyr descended into the hidden cavity, its metallic
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.70s
+Total Latency: 33.21s | TTFT: 1.765s
+Prompt Tokens: 15 | Prompt Eval Rate: 8.50 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 4.07 tokens/s
+Perplexity (PPL): 15.2321
+============================================================================================
+Hardware Summary: Avg Power: 6.97W | Peak Temp: 74.1°C | Peak RAM: 1.01GB
+Throttled: YES | Avg CPU Load: 57.1% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  ARM architecture is designed for energy efficiency and is widely used in mobile devices, embedded systems, and IoT devices. ARM processors are based on a RISC (Reduced Instruction Set Computing) architecture, which means they have a smaller set of instructions that are executed quickly. This results in lower power consumption and heat generation, making ARM ideal for battery-powered devices. ARM processors are also highly customizable, allowing manufacturers to design chips tailored to specific applications and power requirements.
+
+On the other hand, x86 architecture is primarily used in desktop computers, laptops, and servers. x86 processors are based on a CISC (Complex Instruction Set Computing) architecture,
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.70s
+Total Latency: 33.96s | TTFT: 1.779s
+Prompt Tokens: 16 | Prompt Eval Rate: 9.00 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 3.98 tokens/s
+Perplexity (PPL): 47.5634
+============================================================================================
+Hardware Summary: Avg Power: 6.94W | Peak Temp: 75.7°C | Peak RAM: 1.03GB
+Throttled: YES | Avg CPU Load: 57.3% | Avg Clock: 2396.4MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  Let's break down the problem step by step:
+
+1. The farmer initially has 17 sheep.
+2. The phrase "all but 9 run away" means that 9 sheep did not run away.
+3. Therefore, the 9 sheep that did not run away are the ones the farmer has left.
+
+So, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.70s
+Total Latency: 21.33s | TTFT: 3.403s
+Prompt Tokens: 30 | Prompt Eval Rate: 8.81 tokens/s
+Generated Tokens: 72 | Token Gen Rate (TPS): 4.02 tokens/s
+Perplexity (PPL): 10.7726
+============================================================================================
+Hardware Summary: Avg Power: 7.05W | Peak Temp: 76.8°C | Peak RAM: 1.06GB
+Throttled: YES | Avg CPU Load: 61.7% | Avg Clock: 2395.1MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 2048 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  To derive the formula for the sum of an arithmetic series, let's start with the definition of an arithmetic series. An arithmetic series is the sum of the terms of an arithmetic sequence, where each term after the first is obtained by adding a constant difference to the previous term.
+
+Let \( a \) be the first term of the arithmetic series, and \( d \) be the common difference. The \( n \)-th term of the series can be expressed as:
+\[ a_n = a + (n-1)d \]
+
+The sum \( S_n \) of the first \( n \) terms of the arithmetic series can be written
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.70s
+Total Latency: 34.32s | TTFT: 2.529s
+Prompt Tokens: 23 | Prompt Eval Rate: 9.09 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 4.03 tokens/s
+Perplexity (PPL): 27.3761
+============================================================================================
+Hardware Summary: Avg Power: 7.06W | Peak Temp: 77.9°C | Peak RAM: 1.06GB
+Throttled: YES | Avg CPU Load: 58.5% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language. This means that Python code is executed line by line, directly by the Python interpreter, without the need for a separate compilation step. However, Python code can be compiled into bytecode, which is a lower-level, platform-independent representation of the source code. This bytecode is then executed by the Python Virtual Machine (PVM), which is part of the Python runtime environment.
+
+The process of converting Python source code to bytecode typically involves the use of a tool like `py_compile` or `compileall`. For example, you can compile a Python file using the following command:
+
+```bash
+python -m
+--------------------------------------------------------------------------------------------
+Model Load Duration: 48.02s
+Total Latency: 61.29s | TTFT: 1.158s
+Prompt Tokens: 8 | Prompt Eval Rate: 6.91 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.13 tokens/s
+Perplexity (PPL): 12.2803
+============================================================================================
+Hardware Summary: Avg Power: 6.49W | Peak Temp: 71.9°C | Peak RAM: 1.00GB
+Throttled: YES | Avg CPU Load: 97.1% | Avg Clock: 2397.9MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  The response must contain exactly 4 bullet points using the markdown bullet points format, such as: * Bullet point 1. The word "robot" should appear at least 5 times. * In the vast emptiness of a deserted planet, a curious robot named Zeta stumbled upon a hidden garden, its sensors detecting vibrant colors and unusual scents.
+* As the robot explored further, it discovered that the garden was a sanctuary for various alien plants and creatures, each more fascinating than the last, and the robot recorded every detail meticulously.
+* The robot marveled at the intricate ecosystem, realizing that this garden was a rare and precious find
+--------------------------------------------------------------------------------------------
+Model Load Duration: 48.02s
+Total Latency: 63.40s | TTFT: 1.282s
+Prompt Tokens: 15 | Prompt Eval Rate: 11.70 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.06 tokens/s
+Perplexity (PPL): 4.9062
+============================================================================================
+Hardware Summary: Avg Power: 6.65W | Peak Temp: 74.1°C | Peak RAM: 1.01GB
+Throttled: YES | Avg CPU Load: 97.2% | Avg Clock: 2398.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  Your response should contain exactly 3 bullet points using the markdown bullet points format, such as: * Bullet point 1. ARM and x86 are two prominent architectures used in computing, each with distinct characteristics and applications. ARM, which stands for Advanced RISC Machine, is known for its power efficiency and is widely used in mobile devices, embedded systems, and IoT devices. It employs a Reduced Instruction Set Computing (RISC) approach, which simplifies the instruction set and allows for faster execution of instructions. This makes ARM processors ideal for battery-powered devices where energy efficiency is crucial.
+
+* x86, on the other hand, is a
+--------------------------------------------------------------------------------------------
+Model Load Duration: 48.02s
+Total Latency: 63.91s | TTFT: 1.729s
+Prompt Tokens: 16 | Prompt Eval Rate: 9.25 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.06 tokens/s
+Perplexity (PPL): 4.7586
+============================================================================================
+Hardware Summary: Avg Power: 6.63W | Peak Temp: 75.2°C | Peak RAM: 1.03GB
+Throttled: YES | Avg CPU Load: 97.2% | Avg Clock: 2397.2MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  Let's break down the problem step by step:
+
+1. The farmer starts with 17 sheep.
+2. The phrase "all but 9 run away" means that 9 sheep do not run away.
+3. Therefore, the 9 sheep that do not run away are the ones the farmer has left.
+
+So, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 48.02s
+Total Latency: 37.45s | TTFT: 2.342s
+Prompt Tokens: 30 | Prompt Eval Rate: 12.81 tokens/s
+Generated Tokens: 72 | Token Gen Rate (TPS): 2.05 tokens/s
+Perplexity (PPL): 4.6238
+============================================================================================
+Hardware Summary: Avg Power: 6.78W | Peak Temp: 78.5°C | Peak RAM: 1.05GB
+Throttled: YES | Avg CPU Load: 97.3% | Avg Clock: 2396.5MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  To derive the formula for the sum of an arithmetic series, let's start with the definition of an arithmetic series.
+
+An arithmetic series is the sum of the terms of an arithmetic sequence, where each term after the first is obtained by adding a constant difference \(d\) to the previous term. The \(n\)-th term of an arithmetic sequence can be written as:
+\[ a_n = a + (n-1)d \]
+where \(a\) is the first term and \(d\) is the common difference.
+
+The sum \(S_n\) of the first \(n\) terms of an arithmetic series can be written
+--------------------------------------------------------------------------------------------
+Model Load Duration: 48.02s
+Total Latency: 64.41s | TTFT: 2.140s
+Prompt Tokens: 23 | Prompt Eval Rate: 10.75 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.06 tokens/s
+Perplexity (PPL): 5.8307
+============================================================================================
+Hardware Summary: Avg Power: 6.69W | Peak Temp: 76.3°C | Peak RAM: 1.05GB
+Throttled: YES | Avg CPU Load: 97.2% | Avg Clock: 2396.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  
+
+Python is an interpreted language. It is executed line by line by an interpreter, which is a separate program that reads the Python source code and executes it. This means that the code is not compiled into machine code beforehand, but rather interpreted line by line.
+
+Here's a simple example of how Python interprets a line of code:
+
+```python
+x = 5
+print(x)
+```
+
+In this example, the interpreter reads the line of code, executes it, and then prints the result. This process is repeated for each line of code in the script.
+
+Python's interpretation is what makes it so easy to write and run scripts
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.87s
+Total Latency: 14.19s | TTFT: 0.369s
+Prompt Tokens: 9 | Prompt Eval Rate: 24.37 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 9.33 tokens/s
+Perplexity (PPL): 76.6425
+============================================================================================
+Hardware Summary: Avg Power: 6.32W | Peak Temp: 69.2°C | Peak RAM: 0.81GB
+Throttled: YES | Avg CPU Load: 94.7% | Avg Clock: 2391.1MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  While exploring the planet, the robot discovers a garden, and in doing so, it begins to understand the concept of life and its own existence.
+
+---
+
+Zeta-5, a sleek and efficient robot, had been exploring the desolate planet for hours. Its advanced sensors and scanners had revealed a barren landscape, devoid of any signs of life. But Zeta-5 was not one to be deterred. It had a curiosity that drove it forward, and a sense of wonder that it had never experienced before.
+
+As it wandered through the dusty terrain, Zeta-5 stumbled upon a strange structure. It was a large, metallic dome
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.87s
+Total Latency: 14.20s | TTFT: 0.558s
+Prompt Tokens: 16 | Prompt Eval Rate: 28.68 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 9.45 tokens/s
+Perplexity (PPL): 29.2636
+============================================================================================
+Hardware Summary: Avg Power: 6.40W | Peak Temp: 71.4°C | Peak RAM: 0.84GB
+Throttled: YES | Avg CPU Load: 95.5% | Avg Clock: 2392.3MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  The goal is to highlight the unique features and advantages of each architecture.
+
+The ARM (Advanced RISC Machines) architecture is a type of RISC (Reduced Instruction Set Computing) architecture that has gained popularity in recent years due to its power efficiency and low power consumption. One of the key differences between ARM and x86 architectures is their instruction set architecture. ARM's instruction set is designed to be highly pipelined, which allows for efficient use of resources and faster execution times. In contrast, x86's instruction set is more complex and has a higher number of instructions, which can lead to slower execution times and increased power consumption. Additionally
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.87s
+Total Latency: 14.45s | TTFT: 0.574s
+Prompt Tokens: 17 | Prompt Eval Rate: 29.63 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 9.29 tokens/s
+Perplexity (PPL): 23.3137
+============================================================================================
+Hardware Summary: Avg Power: 6.52W | Peak Temp: 73.0°C | Peak RAM: 0.84GB
+Throttled: YES | Avg CPU Load: 95.6% | Avg Clock: 2391.3MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  
+
+## Step 1: Determine the initial number of sheep the farmer has.
+The farmer initially has 17 sheep.
+
+## Step 2: Calculate the number of sheep that run away.
+All but 9 sheep run away. This means 17 - 9 = 8 sheep run away.
+
+## Step 3: Calculate the number of sheep the farmer has left.
+Since 8 sheep run away, the farmer has 17 - 8 = 9 sheep left.
+
+The final answer is: $\boxed{9}$
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.87s
+Total Latency: 12.70s | TTFT: 1.077s
+Prompt Tokens: 31 | Prompt Eval Rate: 28.79 tokens/s
+Generated Tokens: 107 | Token Gen Rate (TPS): 9.20 tokens/s
+Perplexity (PPL): 22.6259
+============================================================================================
+Hardware Summary: Avg Power: 6.69W | Peak Temp: 74.7°C | Peak RAM: 0.85GB
+Throttled: YES | Avg CPU Load: 95.7% | Avg Clock: 2392.6MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  The formula is \(S_{n}=\frac{n}{2}(a_{1}+a_{n})\), where \(S_{n}\) is the sum of the first \(n\) terms, \(a_{1}\) is the first term, \(a_{n}\) is the last term, and \(n\) is the number of terms.
+
+## Step 1: Define the arithmetic series formula
+The sum of an arithmetic series can be calculated using the formula \(S_{n} = \frac{n}{2}(a_{1} + a_{n})\), where \(S_{n}\)
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.87s
+Total Latency: 15.12s | TTFT: 0.832s
+Prompt Tokens: 24 | Prompt Eval Rate: 28.85 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 9.03 tokens/s
+Perplexity (PPL): 12.3311
+============================================================================================
+Hardware Summary: Avg Power: 6.66W | Peak Temp: 74.7°C | Peak RAM: 0.86GB
+Throttled: YES | Avg CPU Load: 95.6% | Avg Clock: 2390.5MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language, not a compiled one. This means that the Python interpreter reads and executes Python code line by line, rather than translating the code into machine code before execution.
+
+This is in contrast to compiled languages like C++ or Java, where the code is translated into machine code before it is executed. The machine code can then be run directly by the computer's processor, which can make compiled languages faster in some cases. However, interpreted languages like Python are often easier to use and more flexible, making them popular choices for many types of programming tasks.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 89.30s
+Total Latency: 262.93s | TTFT: 87.978s
+Prompt Tokens: 9 | Prompt Eval Rate: 0.10 tokens/s
+Generated Tokens: 121 | Token Gen Rate (TPS): 0.69 tokens/s
+Perplexity (PPL): 27.7122
+============================================================================================
+Hardware Summary: Avg Power: 4.31W | Peak Temp: 71.9°C | Peak RAM: 0.89GB
+Throttled: YES | Avg CPU Load: 40.3% | Avg Clock: 1968.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response: 
+
+In the vast expanse of the cosmos, a solitary robot named Orion wandered through the desolate landscape of a forgotten planet. Orion was an explorer, sent by humanity to seek out new worlds and civilizations. This planet, designated as X-47B, was supposed to be barren and lifeless, but Orion's sensors detected something unusual.
+
+As Orion approached the coordinates, it noticed a peculiar anomaly. A lush, vibrant garden, teeming with flora and fauna, appeared amidst the desolation. Orion, programmed to
+--------------------------------------------------------------------------------------------
+Model Load Duration: 89.30s
+Total Latency: 129.07s | TTFT: 9.991s
+Prompt Tokens: 18 | Prompt Eval Rate: 1.80 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 1.09 tokens/s
+Perplexity (PPL): 14.3792
+============================================================================================
+Hardware Summary: Avg Power: 6.35W | Peak Temp: 72.5°C | Peak RAM: 0.73GB
+Throttled: YES | Avg CPU Load: 86.1% | Avg Clock: 2330.5MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response: 
+
+ARM (Advanced RISC Machine) and x86 (Intel x86) are two distinct architectures used in the design of microprocessors and microcontrollers.
+
+1. Instruction Set and Architecture: The primary difference lies in their instruction set architecture (ISA). x86 is a CISC (Complex Instruction Set Computing) architecture, which means it supports a large number of complex instructions, allowing for direct manipulation of data and memory. On the other hand, ARM is a RISC (Reduced Instruction Set Computing) architecture, which means it
+--------------------------------------------------------------------------------------------
+Model Load Duration: 89.30s
+Total Latency: 127.98s | TTFT: 7.421s
+Prompt Tokens: 20 | Prompt Eval Rate: 2.70 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 1.08 tokens/s
+Perplexity (PPL): 13.6272
+============================================================================================
+Hardware Summary: Avg Power: 6.51W | Peak Temp: 74.1°C | Peak RAM: 0.72GB
+Throttled: YES | Avg CPU Load: 88.8% | Avg Clock: 2342.7MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response: 
+
+Here's the reasoning:
+1. The question states that a farmer has 17 sheep initially.
+2. Then it says that all but 9 run away. This means that 17 - 9 = 8 sheep ran away.
+3. However, the question asks for the number of sheep the farmer has left, not the number that ran away.
+4. Since the 9 sheep didn't run away, the farmer still has those 9 sheep.
+
+So, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 89.30s
+Total Latency: 131.20s | TTFT: 15.035s
+Prompt Tokens: 33 | Prompt Eval Rate: 2.19 tokens/s
+Generated Tokens: 116 | Token Gen Rate (TPS): 1.00 tokens/s
+Perplexity (PPL): 9.1975
+============================================================================================
+Hardware Summary: Avg Power: 6.09W | Peak Temp: 74.7°C | Peak RAM: 0.75GB
+Throttled: YES | Avg CPU Load: 77.5% | Avg Clock: 2267.6MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response: 
+
+To derive the formula for the sum of an arithmetic series, we can use the following steps:
+
+1. Let n be the number of terms in the series, a be the first term, and d be the common difference between consecutive terms.
+2. The nth term (an) can be found using the formula an = a + (n - 1)d.
+3. The sum (S) of the series can be found by adding all the terms: S = a + (a + d) + (a + 2d) + ... + (a + (n -
+--------------------------------------------------------------------------------------------
+Model Load Duration: 89.30s
+Total Latency: 127.17s | TTFT: 8.136s
+Prompt Tokens: 28 | Prompt Eval Rate: 3.44 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 1.09 tokens/s
+Perplexity (PPL): 6.6601
+============================================================================================
+Hardware Summary: Avg Power: 6.53W | Peak Temp: 74.7°C | Peak RAM: 0.75GB
+Throttled: YES | Avg CPU Load: 87.6% | Avg Clock: 2339.6MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  
+
+Python is an interpreted language. It is executed line by line, and the code is interpreted by an interpreter, which translates the code into machine code at runtime. This means that the Python interpreter does not need to compile the code beforehand, which makes it easier to write and maintain Python programs.
+
+Here's an example of how Python is executed:
+
+1. The Python interpreter reads the code from a file or a string.
+2. The interpreter translates the code into machine code.
+3. The machine code is executed by the computer's processor.
+
+In contrast, compiled languages are translated into machine code beforehand, which can result in faster execution times.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.79s
+Total Latency: 20.79s | TTFT: 0.312s
+Prompt Tokens: 9 | Prompt Eval Rate: 28.86 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 6.30 tokens/s
+Perplexity (PPL): 73.5381
+============================================================================================
+Hardware Summary: Avg Power: 6.10W | Peak Temp: 69.7°C | Peak RAM: 0.74GB
+Throttled: YES | Avg CPU Load: 95.1% | Avg Clock: 2387.8MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  A robot named Zeta-5, a member of an intergalactic exploration team, had been sent to explore the unknown reaches of the galaxy. As he ventured deeper into the desolate landscape, he stumbled upon a lush and vibrant garden, teeming with life and color.
+
+As Zeta-5 explored the garden, he marveled at the beauty and diversity of the flora and fauna that surrounded him. The garden was filled with towering trees, their trunks thick and gnarled, their leaves a kaleidoscope of greens and blues. The air was filled with the sweet scent of blooming flowers, and the soft chirping
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.79s
+Total Latency: 20.62s | TTFT: 0.572s
+Prompt Tokens: 16 | Prompt Eval Rate: 27.97 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 6.44 tokens/s
+Perplexity (PPL): 30.6344
+============================================================================================
+Hardware Summary: Avg Power: 6.46W | Peak Temp: 71.4°C | Peak RAM: 0.76GB
+Throttled: YES | Avg CPU Load: 95.4% | Avg Clock: 2383.7MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  The focus is on the differences in instruction set architecture (ISA), instruction-level parallelism (ILP), and memory access patterns.
+
+The ARM (Advanced RISC Machines) architecture is a RISC (Reduced Instruction Set Computing) architecture that has been widely adopted in mobile devices, servers, and other embedded systems. In contrast, the x86 architecture is a CISC (Complex Instruction Set Computing) architecture that has been widely used in personal computers, servers, and other high-performance computing applications. One of the key differences between the two architectures is their instruction set architecture (ISA). The ARM ISA is designed to be highly pipelined,
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.79s
+Total Latency: 20.94s | TTFT: 0.527s
+Prompt Tokens: 17 | Prompt Eval Rate: 32.23 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 6.32 tokens/s
+Perplexity (PPL): 25.0133
+============================================================================================
+Hardware Summary: Avg Power: 6.44W | Peak Temp: 72.5°C | Peak RAM: 0.77GB
+Throttled: YES | Avg CPU Load: 96.2% | Avg Clock: 2390.9MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  
+
+## Step 1: Determine the initial number of sheep the farmer has.
+The farmer initially has 17 sheep.
+
+## Step 2: Calculate the number of sheep that ran away.
+All but 9 sheep ran away. This means 17 - 9 = 8 sheep ran away.
+
+## Step 3: Calculate the number of sheep the farmer has left.
+To find the number of sheep the farmer has left, subtract the number of sheep that ran away from the initial number of sheep. So, 17 - 8 = 9.
+
+The final answer is: $\boxed{9}$
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.79s
+Total Latency: 20.82s | TTFT: 0.999s
+Prompt Tokens: 31 | Prompt Eval Rate: 31.02 tokens/s
+Generated Tokens: 123 | Token Gen Rate (TPS): 6.21 tokens/s
+Perplexity (PPL): 22.1960
+============================================================================================
+Hardware Summary: Avg Power: 6.33W | Peak Temp: 73.6°C | Peak RAM: 0.79GB
+Throttled: YES | Avg CPU Load: 95.0% | Avg Clock: 2385.4MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q8_0 | Ctx: 2048 | Thr: 4
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  The formula for the sum of an arithmetic series is given by S = n/2 * (a1 + an), where n is the number of terms, a1 is the first term, and an is the last term.
+
+## Step 1: Define the arithmetic series formula
+The arithmetic series formula is given by S = n/2 * (a1 + an), where n is the number of terms, a1 is the first term, and an is the last term.
+
+## Step 2: Identify the variables in the formula
+The variables in the formula are n (number of terms), a1 (first term),
+--------------------------------------------------------------------------------------------
+Model Load Duration: 17.79s
+Total Latency: 21.57s | TTFT: 0.696s
+Prompt Tokens: 24 | Prompt Eval Rate: 34.50 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 6.18 tokens/s
+Perplexity (PPL): 11.5672
+============================================================================================
+Hardware Summary: Avg Power: 6.42W | Peak Temp: 74.1°C | Peak RAM: 0.81GB
+Throttled: YES | Avg CPU Load: 95.9% | Avg Clock: 2389.7MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language, not a compiled one. This means that the Python interpreter reads and executes Python code line by line, rather than translating the code into machine code before execution. This allows for faster development and easier debugging, but can result in slower execution times compared to compiled languages like C or Java.
+
+Python code is executed by the Python interpreter, which reads the code and translates it into bytecode that can be executed by the Python Virtual Machine (PVM). The PVM is a part of the Python runtime environment that manages the execution of Python code.
+
+In contrast,
+--------------------------------------------------------------------------------------------
+Model Load Duration: 51.37s
+Total Latency: 64.75s | TTFT: 1.685s
+Prompt Tokens: 9 | Prompt Eval Rate: 5.34 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.06 tokens/s
+Perplexity (PPL): 24.9705
+============================================================================================
+Hardware Summary: Avg Power: 6.93W | Peak Temp: 74.1°C | Peak RAM: 0.91GB
+Throttled: YES | Avg CPU Load: 97.0% | Avg Clock: 2397.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response: 
+
+In the vast expanse of the cosmos, a lone robot named Orion wandered through the desolate landscape of a forgotten planet. Orion was an exploratory unit, programmed to seek out life and resources in the uncharted corners of the universe. His mission was long and arduous, but he was equipped with a relentless drive and an insatiable curiosity that fueled his journey.
+
+One day, as Orion trudged through the endless dunes of sand, his sensors detected something unusual. A faint green glow emanated from a nearby hill, and his
+--------------------------------------------------------------------------------------------
+Model Load Duration: 51.37s
+Total Latency: 67.76s | TTFT: 3.111s
+Prompt Tokens: 18 | Prompt Eval Rate: 5.79 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.01 tokens/s
+Perplexity (PPL): 14.0832
+============================================================================================
+Hardware Summary: Avg Power: 7.06W | Peak Temp: 77.9°C | Peak RAM: 0.93GB
+Throttled: YES | Avg CPU Load: 97.3% | Avg Clock: 2396.2MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response: 
+
+ARM (Advanced RISC Machine) and x86 (Intel x86) are two distinct architectures used in the design of microprocessors for various computing devices.
+
+1. Instruction Set Architecture (ISA): The x86 ISA is a complex CISC (Complex Instruction Set Computing) architecture, which supports a wide range of instructions and allows for direct manipulation of data. On the other hand, ARM is a RISC (Reduced Instruction Set Computing) architecture, featuring a smaller set of instructions but with each instruction performing a single function.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 51.37s
+Total Latency: 67.81s | TTFT: 3.435s
+Prompt Tokens: 20 | Prompt Eval Rate: 5.82 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.02 tokens/s
+Perplexity (PPL): 13.3499
+============================================================================================
+Hardware Summary: Avg Power: 7.09W | Peak Temp: 79.0°C | Peak RAM: 0.94GB
+Throttled: YES | Avg CPU Load: 97.3% | Avg Clock: 2396.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response: 
+
+The question asks how many sheep the farmer has left, not how many ran away. So, the farmer has 9 sheep left.
+
+Here's the reasoning:
+1. The total number of sheep is 17.
+2. All but 9 sheep ran away, which means 17 - 9 = 8 sheep ran away.
+3. However, the question asks for the number of sheep the farmer has left, not the number that ran away.
+4. Therefore, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 51.37s
+Total Latency: 63.76s | TTFT: 5.641s
+Prompt Tokens: 33 | Prompt Eval Rate: 5.85 tokens/s
+Generated Tokens: 116 | Token Gen Rate (TPS): 2.00 tokens/s
+Perplexity (PPL): 9.6236
+============================================================================================
+Hardware Summary: Avg Power: 7.04W | Peak Temp: 79.6°C | Peak RAM: 0.94GB
+Throttled: YES | Avg CPU Load: 97.3% | Avg Clock: 2395.5MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response: 
+
+An arithmetic series is a sequence of numbers in which the difference between any two consecutive terms is constant. The formula for the sum of an arithmetic series is given by:
+
+S = n * (a + l) / 2
+
+where:
+- S is the sum of the series,
+- n is the number of terms in the series,
+- a is the first term, and
+- l is the last term.
+
+To verify this formula for the integers 1 through 10, we first need to find the number of terms (n) and the last
+--------------------------------------------------------------------------------------------
+Model Load Duration: 51.37s
+Total Latency: 69.42s | TTFT: 4.811s
+Prompt Tokens: 28 | Prompt Eval Rate: 5.82 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 2.01 tokens/s
+Perplexity (PPL): 6.5488
+============================================================================================
+Hardware Summary: Avg Power: 7.10W | Peak Temp: 80.7°C | Peak RAM: 0.94GB
+Throttled: YES | Avg CPU Load: 97.3% | Avg Clock: 2394.4MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language. This means that Python code is executed line by line by an interpreter. Unlike compiled languages, there is no need to compile the code before running it. However, Python code can be compiled into bytecode, which is a lower-level representation of the code that can be executed by the Python interpreter. This bytecode is platform-independent and can be executed on any machine that has a compatible Python interpreter.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.66s
+Total Latency: 25.83s | TTFT: 0.937s
+Prompt Tokens: 8 | Prompt Eval Rate: 8.54 tokens/s
+Generated Tokens: 85 | Token Gen Rate (TPS): 3.42 tokens/s
+Perplexity (PPL): 58.4637
+============================================================================================
+Hardware Summary: Avg Power: 6.71W | Peak Temp: 72.5°C | Peak RAM: 0.98GB
+Throttled: YES | Avg CPU Load: 96.0% | Avg Clock: 2395.1MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  The story should contain exactly 4 paragraphs. Paragraphs should be separated with the markdown divider: *** In the distant reaches of the galaxy, there existed a deserted planet named Xeridia. This desolate world was covered in a thick layer of crimson dust, with jagged rocks and barren landscapes stretching as far as the eye could see. Amidst this desolation, a lone robot named Zephyr roamed, programmed to explore and catalog unknown territories. Zephyr's sensors detected an unusual anomaly beneath the crimson dust—a faint, rhythmic pulse emanating from beneath the surface.
+
+***
+
+Curious, Zephyr descended into the hidden cavity, its metallic
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.66s
+Total Latency: 39.89s | TTFT: 1.738s
+Prompt Tokens: 15 | Prompt Eval Rate: 8.63 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 3.36 tokens/s
+Perplexity (PPL): 15.2321
+============================================================================================
+Hardware Summary: Avg Power: 6.80W | Peak Temp: 75.2°C | Peak RAM: 1.02GB
+Throttled: YES | Avg CPU Load: 96.8% | Avg Clock: 2395.6MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  ARM architecture is designed for energy efficiency and is widely used in mobile devices, embedded systems, and IoT devices. ARM processors are based on a RISC (Reduced Instruction Set Computing) architecture, which means they have a smaller set of instructions that are executed quickly. This results in lower power consumption and heat generation, making ARM ideal for battery-powered devices. ARM processors are also highly customizable, allowing manufacturers to design chips tailored to specific applications and power requirements.
+
+On the other hand, x86 architecture is primarily used in desktop computers, laptops, and servers. x86 processors are based on a CISC (Complex Instruction Set Computing) architecture,
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.66s
+Total Latency: 40.11s | TTFT: 1.813s
+Prompt Tokens: 16 | Prompt Eval Rate: 8.83 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 3.34 tokens/s
+Perplexity (PPL): 47.5634
+============================================================================================
+Hardware Summary: Avg Power: 6.83W | Peak Temp: 77.9°C | Peak RAM: 1.03GB
+Throttled: YES | Avg CPU Load: 96.8% | Avg Clock: 2394.4MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  Let's break down the problem step by step:
+
+1. The farmer initially has 17 sheep.
+2. The phrase "all but 9 run away" means that 9 sheep did not run away.
+3. Therefore, the 9 sheep that did not run away are the ones the farmer has left.
+
+So, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.66s
+Total Latency: 24.90s | TTFT: 3.300s
+Prompt Tokens: 30 | Prompt Eval Rate: 9.09 tokens/s
+Generated Tokens: 72 | Token Gen Rate (TPS): 3.33 tokens/s
+Perplexity (PPL): 10.7726
+============================================================================================
+Hardware Summary: Avg Power: 7.12W | Peak Temp: 79.0°C | Peak RAM: 1.04GB
+Throttled: YES | Avg CPU Load: 97.1% | Avg Clock: 2394.9MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q4_K_M | Ctx: 2048 | Thr: 4
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  To derive the formula for the sum of an arithmetic series, let's start with the definition of an arithmetic series. An arithmetic series is the sum of the terms of an arithmetic sequence, where each term after the first is obtained by adding a constant difference to the previous term.
+
+Let \( a \) be the first term of the arithmetic series, and \( d \) be the common difference. The \( n \)-th term of the series can be expressed as:
+\[ a_n = a + (n-1)d \]
+
+The sum \( S_n \) of the first \( n \) terms of the arithmetic series can be written
+--------------------------------------------------------------------------------------------
+Model Load Duration: 29.66s
+Total Latency: 41.13s | TTFT: 2.586s
+Prompt Tokens: 23 | Prompt Eval Rate: 8.89 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 3.32 tokens/s
+Perplexity (PPL): 27.3761
+============================================================================================
+Hardware Summary: Avg Power: 6.82W | Peak Temp: 80.1°C | Peak RAM: 1.05GB
+Throttled: YES | Avg CPU Load: 96.8% | Avg Clock: 2396.1MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 4096 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language. This means that Python code is executed line by line, directly by the Python interpreter, without the need for a separate compilation step. However, Python code can be compiled into bytecode, which is a lower-level, platform-independent representation of the source code. This bytecode is then executed by the Python Virtual Machine (PVM), which is part of the Python runtime environment.
+
+The process of converting Python source code to bytecode typically involves the use of a tool like `py_compile` or `compileall`. For example, you can compile a Python file using the following command:
+
+```bash
+python -m
+--------------------------------------------------------------------------------------------
+Model Load Duration: 48.16s
+Total Latency: 47.09s | TTFT: 1.161s
+Prompt Tokens: 8 | Prompt Eval Rate: 6.89 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.79 tokens/s
+Perplexity (PPL): 12.2803
+============================================================================================
+Hardware Summary: Avg Power: 6.61W | Peak Temp: 70.3°C | Peak RAM: 1.20GB
+Throttled: YES | Avg CPU Load: 57.4% | Avg Clock: 2399.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 4096 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  The response must contain exactly 4 bullet points using the markdown bullet points format, such as: * Bullet point 1. The word "robot" should appear at least 5 times. * In the vast emptiness of a deserted planet, a curious robot named Zeta stumbled upon a hidden garden, its sensors detecting vibrant colors and unusual scents.
+* As the robot explored further, it discovered that the garden was a sanctuary for various alien plants and creatures, each more fascinating than the last, and the robot recorded every detail meticulously.
+* The robot marveled at the intricate ecosystem, realizing that this garden was a rare and precious find
+--------------------------------------------------------------------------------------------
+Model Load Duration: 48.16s
+Total Latency: 48.65s | TTFT: 1.346s
+Prompt Tokens: 15 | Prompt Eval Rate: 11.14 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.71 tokens/s
+Perplexity (PPL): 4.9062
+============================================================================================
+Hardware Summary: Avg Power: 6.59W | Peak Temp: 72.5°C | Peak RAM: 1.21GB
+Throttled: YES | Avg CPU Load: 57.6% | Avg Clock: 2398.4MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 4096 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  Your response should contain exactly 3 bullet points using the markdown bullet points format, such as: * Bullet point 1. ARM and x86 are two prominent architectures used in computing, each with distinct characteristics and applications. ARM, which stands for Advanced RISC Machine, is known for its power efficiency and is widely used in mobile devices, embedded systems, and IoT devices. It employs a Reduced Instruction Set Computing (RISC) approach, which simplifies the instruction set and allows for faster execution of instructions. This makes ARM processors ideal for battery-powered devices where energy efficiency is crucial.
+
+* x86, on the other hand, is a
+--------------------------------------------------------------------------------------------
+Model Load Duration: 48.16s
+Total Latency: 49.14s | TTFT: 1.766s
+Prompt Tokens: 16 | Prompt Eval Rate: 9.06 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.70 tokens/s
+Perplexity (PPL): 4.7586
+============================================================================================
+Hardware Summary: Avg Power: 6.61W | Peak Temp: 73.0°C | Peak RAM: 1.22GB
+Throttled: YES | Avg CPU Load: 57.8% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 4096 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  Let's break down the problem step by step:
+
+1. The farmer starts with 17 sheep.
+2. The phrase "all but 9 run away" means that 9 sheep do not run away.
+3. Therefore, the 9 sheep that do not run away are the ones the farmer has left.
+
+So, the farmer has 9 sheep left.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 48.16s
+Total Latency: 29.75s | TTFT: 2.345s
+Prompt Tokens: 30 | Prompt Eval Rate: 12.79 tokens/s
+Generated Tokens: 72 | Token Gen Rate (TPS): 2.63 tokens/s
+Perplexity (PPL): 4.6238
+============================================================================================
+Hardware Summary: Avg Power: 6.80W | Peak Temp: 75.2°C | Peak RAM: 1.34GB
+Throttled: YES | Avg CPU Load: 63.6% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: microsoft_Phi-4-mini-instruct-Q8_0 | Ctx: 4096 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  To derive the formula for the sum of an arithmetic series, let's start with the definition of an arithmetic series.
+
+An arithmetic series is the sum of the terms of an arithmetic sequence, where each term after the first is obtained by adding a constant difference \(d\) to the previous term. The \(n\)-th term of an arithmetic sequence can be written as:
+\[ a_n = a + (n-1)d \]
+where \(a\) is the first term and \(d\) is the common difference.
+
+The sum \(S_n\) of the first \(n\) terms of an arithmetic series can be written
+--------------------------------------------------------------------------------------------
+Model Load Duration: 48.16s
+Total Latency: 49.53s | TTFT: 2.138s
+Prompt Tokens: 23 | Prompt Eval Rate: 10.76 tokens/s
+Generated Tokens: 128 | Token Gen Rate (TPS): 2.70 tokens/s
+Perplexity (PPL): 5.8307
+============================================================================================
+Hardware Summary: Avg Power: 6.68W | Peak Temp: 74.7°C | Peak RAM: 1.35GB
+Throttled: YES | Avg CPU Load: 58.1% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 4096 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  
+
+Python is an interpreted language. It is executed line by line by an interpreter, which is a separate program that reads the Python source code and executes it. This means that the code is not compiled into machine code beforehand, but rather interpreted line by line.
+
+Here's a simple example of how Python interprets a line of code:
+
+```python
+x = 5
+print(x)
+```
+
+In this example, the interpreter reads the line of code, executes it, and then prints the result. This process is repeated for each line of code in the script.
+
+Python's interpretation is what makes it so easy to write and run scripts
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.93s
+Total Latency: 10.68s | TTFT: 0.355s
+Prompt Tokens: 9 | Prompt Eval Rate: 25.32 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 12.49 tokens/s
+Perplexity (PPL): 76.6425
+============================================================================================
+Hardware Summary: Avg Power: 6.81W | Peak Temp: 68.6°C | Peak RAM: 0.98GB
+Throttled: YES | Avg CPU Load: 57.0% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 4096 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response:  While exploring the planet, the robot discovers a garden, and in doing so, it begins to understand the concept of life and its own existence.
+
+---
+
+Zeta-5, a sleek and efficient robot, had been exploring the desolate planet for hours. Its advanced sensors and scanners had revealed a barren landscape, devoid of any signs of life. But Zeta-5 was not one to be deterred. It had a curiosity that drove it forward, and a sense of wonder that it had never experienced before.
+
+As it wandered through the dusty terrain, Zeta-5 stumbled upon a strange structure. It was a large, metallic dome
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.93s
+Total Latency: 10.84s | TTFT: 0.582s
+Prompt Tokens: 16 | Prompt Eval Rate: 27.50 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 12.58 tokens/s
+Perplexity (PPL): 29.2636
+============================================================================================
+Hardware Summary: Avg Power: 6.69W | Peak Temp: 70.3°C | Peak RAM: 0.98GB
+Throttled: YES | Avg CPU Load: 56.4% | Avg Clock: 2395.9MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 4096 | Thr: 2
+Prompt: 3
+--------------------------------------------------------------------------------------------
+Response:  The goal is to highlight the unique features and advantages of each architecture.
+
+The ARM (Advanced RISC Machines) architecture is a type of RISC (Reduced Instruction Set Computing) architecture that has gained popularity in recent years due to its power efficiency and low power consumption. One of the key differences between ARM and x86 architectures is their instruction set architecture. ARM's instruction set is designed to be highly pipelined, which allows for efficient use of resources and faster execution times. In contrast, x86's instruction set is more complex and has a higher number of instructions, which can lead to slower execution times and increased power consumption. Additionally
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.93s
+Total Latency: 10.86s | TTFT: 0.597s
+Prompt Tokens: 17 | Prompt Eval Rate: 28.46 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 12.58 tokens/s
+Perplexity (PPL): 23.3137
+============================================================================================
+Hardware Summary: Avg Power: 6.83W | Peak Temp: 71.4°C | Peak RAM: 0.99GB
+Throttled: YES | Avg CPU Load: 57.0% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 4096 | Thr: 2
+Prompt: 4
+--------------------------------------------------------------------------------------------
+Response:  
+
+## Step 1: Determine the initial number of sheep the farmer has.
+The farmer initially has 17 sheep.
+
+## Step 2: Calculate the number of sheep that run away.
+All but 9 sheep run away. This means 17 - 9 = 8 sheep run away.
+
+## Step 3: Calculate the number of sheep the farmer has left.
+Since 8 sheep run away, the farmer has 17 - 8 = 9 sheep left.
+
+The final answer is: $\boxed{9}$
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.93s
+Total Latency: 9.86s | TTFT: 1.101s
+Prompt Tokens: 31 | Prompt Eval Rate: 28.15 tokens/s
+Generated Tokens: 107 | Token Gen Rate (TPS): 12.22 tokens/s
+Perplexity (PPL): 22.6259
+============================================================================================
+Hardware Summary: Avg Power: 6.90W | Peak Temp: 72.5°C | Peak RAM: 1.00GB
+Throttled: YES | Avg CPU Load: 59.7% | Avg Clock: 2400.0MHz
+============================================================================================
+
+============================================================================================
+Model: Llama-3.2-1B-Q4_K_M | Ctx: 4096 | Thr: 2
+Prompt: 5
+--------------------------------------------------------------------------------------------
+Response:  The formula is \(S_{n}=\frac{n}{2}(a_{1}+a_{n})\), where \(S_{n}\) is the sum of the first \(n\) terms, \(a_{1}\) is the first term, \(a_{n}\) is the last term, and \(n\) is the number of terms.
+
+## Step 1: Define the arithmetic series formula
+The sum of an arithmetic series can be calculated using the formula \(S_{n} = \frac{n}{2}(a_{1} + a_{n})\), where \(S_{n}\)
+--------------------------------------------------------------------------------------------
+Model Load Duration: 9.93s
+Total Latency: 11.51s | TTFT: 0.855s
+Prompt Tokens: 24 | Prompt Eval Rate: 28.06 tokens/s
+Generated Tokens: 129 | Token Gen Rate (TPS): 12.10 tokens/s
+Perplexity (PPL): 12.3311
+============================================================================================
+Hardware Summary: Avg Power: 6.83W | Peak Temp: 74.1°C | Peak RAM: 1.01GB
+Throttled: YES | Avg CPU Load: 58.4% | Avg Clock: 2397.4MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 4096 | Thr: 2
+Prompt: 1
+--------------------------------------------------------------------------------------------
+Response:  Python is an interpreted language, not a compiled one. This means that the Python interpreter reads and executes Python code line by line, rather than translating the code into machine code before execution.
+
+This is in contrast to compiled languages like C++ or Java, where the code is translated into machine code before it is executed. The machine code can then be run directly by the computer's processor, which can make compiled languages faster in some cases. However, interpreted languages like Python are often easier to use and more flexible, making them popular choices for many types of programming tasks.
+--------------------------------------------------------------------------------------------
+Model Load Duration: 90.93s
+Total Latency: 2361.21s | TTFT: 114.457s
+Prompt Tokens: 9 | Prompt Eval Rate: 0.08 tokens/s
+Generated Tokens: 121 | Token Gen Rate (TPS): 0.05 tokens/s
+Perplexity (PPL): 27.7122
+============================================================================================
+Hardware Summary: Avg Power: 2.99W | Peak Temp: 57.6°C | Peak RAM: 1.18GB
+Throttled: YES | Avg CPU Load: 9.2% | Avg Clock: 1736.0MHz
+============================================================================================
+
+============================================================================================
+Model: Mistral-7B-v0.3-Q8_0 | Ctx: 4096 | Thr: 2
+Prompt: 2
+--------------------------------------------------------------------------------------------
+Response: 
+
+In the vast expanse of the cosmos, a solitary robot named Orion wandered through the desolate landscape of a forgotten planet. Orion was an explorer, sent by humanity to seek out new worlds and civilizations. This planet, designated as X-47B, was supposed to be barren and lifeless, but Orion's sensors detected something unusual.
+
+As Orion approached the coordinates, it noticed a peculiar anomaly. A lush, vibrant garden, teeming with flora and fauna, appeared amidst the desolation. Orion, programmed to
+--------------------------------------------------------------------------------------------
+Model Load Duration: 90.93s
+Total Latency: 2613.29s | TTFT: 24.017s
+Prompt Tokens: 18 | Prompt Eval Rate: 0.75 tokens/s
+Generated Tokens: 130 | Token Gen Rate (TPS): 0.05 tokens/s
+Perplexity (PPL): 14.3792
+============================================================================================
+Hardware Summary: Avg Power: 2.95W | Peak Temp: 56.0°C | Peak RAM: 0.90GB
+Throttled: YES | Avg CPU Load: 9.0% | Avg Clock: 1730.3MHz
+============================================================================================

@@ -1,0 +1,24 @@
+Model: llama3.2:1b
+Prompt: Is Python an interpreted or compiled language?
+Response: Python is a high-level, interpreted language. It is not compiled into machine code like low-level languages such as C or C++. Instead, it interprets the source code line by line and executes it directly.
+
+When you run a Python script, the interpreter (e.g., Python itself) reads the code, walks through each line, and performs the necessary actions to execute the program. This process is called "interpretation" because the interpreter doesn't translate the code into machine code beforehand.
+
+In contrast, compiled languages like C or C++ are translated into machine code before they are run, which can result in faster execution speeds but also larger binary files that take up more disk space.
+
+Here's a rough outline of how Python works:
+
+1. You write your code in Python.
+2. The Python interpreter (e.g., `python` command) reads the code.
+3. The interpreter walks through each line and executes it directly, without translating it into machine code beforehand.
+4. The result is executed by the computer's processor.
+
+So, while Python has a high-level syntax that makes it easier to write code quickly, its interpretation mode means that you don't need to worry about translating your code into machine code before running it – it's ready to go straight away!
+--- Inference Metrics ---
+Total Latency: 54.75s
+Load Duration: 2.77s
+Tokens (Prompt): 33
+Tokens (Generated): 256
+Prompt Eval Rate: 27.24 tokens/s
+Token Gen Rate (TPS): 5.07 tokens/s
+Time to First Token: 1.21s
