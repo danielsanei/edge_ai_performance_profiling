@@ -13,6 +13,16 @@ DATA_DIR = "../data"
 PLOT_DIR = "../data/plots"
 os.makedirs(PLOT_DIR, exist_ok=True)
 
+# CHANGE: explicit ordering by parameter count — used everywhere to enforce consistent layout
+model_order = ['Llama-1B', 'Phi-4-mini', 'Mistral-7B', 'Llama-8B']
+quant_order  = ['Q4_K_M', 'Q8_0']
+model_full_order = [f"{m} ({q})" for m in model_order for q in quant_order]
+
+def reorder_pivot(pivot, order, col='Model_Full'):
+    """Reindex a pivot dataframe's rows to match the desired model order."""
+    available = [m for m in order if m in pivot[col].values]
+    return pivot.set_index(col).reindex(available).reset_index()
+
 def analyze_results():
     # 1. Load Master Results
     # CHANGE: Explicitly specify all 18 column names — pipeline writes 18 values per row
@@ -35,11 +45,17 @@ def analyze_results():
         'Meta-Llama-3.1-8B': 'Llama-8B'
     }
     master_df['Model_Short'] = master_df['Model'].map(label_map).fillna(master_df['Model'])
-    master_df['Model_Full'] = master_df['Model_Short'] + " (" + master_df['Quant'] + ")"
+    master_df['Model_Full']  = master_df['Model_Short'] + " (" + master_df['Quant'] + ")"
+
+    # CHANGE: enforce parameter-size ordering on label columns so all plots are consistent
+    master_df['Model_Short'] = pd.Categorical(master_df['Model_Short'], categories=model_order,      ordered=True)
+    master_df['Model_Full']  = pd.Categorical(master_df['Model_Full'],  categories=model_full_order, ordered=True)
 
     # 2. Compute Averages per Model/Quant/Context
     # CHANGE: Added hardware metric columns to aggregation
-    summary = master_df.groupby(['Model', 'Model_Short', 'Quant', 'Context', 'Threads']).agg({
+    summary = master_df.groupby(
+        ['Model', 'Model_Short', 'Quant', 'Context', 'Threads'], observed=True
+    ).agg({
         'TPS': 'mean',
         'PPL': 'mean',
         'TTFT': 'mean',
@@ -53,7 +69,11 @@ def analyze_results():
         'Throttled': 'max'
     }).reset_index()
 
-    summary['Model_Full'] = summary['Model_Short'] + " (" + summary['Quant'] + ")"
+    summary['Model_Full'] = summary['Model_Short'].astype(str) + " (" + summary['Quant'] + ")"
+    summary['Model_Full'] = pd.Categorical(summary['Model_Full'], categories=model_full_order, ordered=True)
+
+    # CHANGE: sort summary by the explicit model size order for consistent downstream use
+    summary = summary.sort_values(['Model_Short', 'Quant', 'Context', 'Threads']).reset_index(drop=True)
 
     print("\n" + "="*80)
     print(f"{'MODEL SUMMARY STATISTICS':^80}")
@@ -62,15 +82,18 @@ def analyze_results():
 
     # --- PLOT 1: The Pareto Frontier (PPL vs TPS) ---
     # Average over prompts and threads; one point per model+quant+context combination
-    pareto_df = summary.groupby(['Model_Short', 'Quant', 'Context']).agg({
+    pareto_df = summary.groupby(['Model_Short', 'Quant', 'Context'], observed=True).agg({
         'TPS': 'mean', 'PPL': 'mean'
     }).reset_index()
-    pareto_df['Label'] = pareto_df['Model_Short'] + " (" + pareto_df['Quant'] + ")"
+    pareto_df['Label'] = pareto_df['Model_Short'].astype(str) + " (" + pareto_df['Quant'] + ")"
+
+    # CHANGE: hue_order follows parameter-size ordering
+    label_order = [l for l in model_full_order if l in pareto_df['Label'].values]
 
     plt.figure(figsize=(11, 7))
-    sns.scatterplot(data=pareto_df, x='TPS', y='PPL', hue='Label', style='Quant', s=180, palette='tab10')
+    sns.scatterplot(data=pareto_df, x='TPS', y='PPL', hue='Label', style='Quant',
+                    s=180, palette='tab10', hue_order=label_order)
 
-    # annotate each point with its context window size
     for _, row in pareto_df.iterrows():
         plt.text(row['TPS'] + 0.05, row['PPL'], f"CTX={int(row['Context'])}", fontsize=7.5, alpha=0.85)
 
@@ -87,14 +110,19 @@ def analyze_results():
     fig, axes = plt.subplots(1, 2, figsize=(14, 6), sharey=False)
     for ax, thr in zip(axes, [2, 4]):
         tps_ctx = summary[summary['Threads'] == thr].groupby(
-            ['Model_Short', 'Quant', 'Context']
+            ['Model_Short', 'Quant', 'Context'], observed=True
         )['TPS'].mean().reset_index()
 
-        for (model, quant), grp in tps_ctx.groupby(['Model_Short', 'Quant']):
-            grp = grp.sort_values('Context')
-            linestyle = '--' if quant == 'Q8_0' else '-'
-            ax.plot(grp['Context'], grp['TPS'], marker='o', linestyle=linestyle,
-                    label=f"{model} ({quant})", linewidth=2)
+        # CHANGE: iterate in explicit parameter-size order instead of pandas default
+        for model in model_order:
+            for quant in quant_order:
+                grp = tps_ctx[(tps_ctx['Model_Short'] == model) & (tps_ctx['Quant'] == quant)]
+                if grp.empty:
+                    continue
+                grp = grp.sort_values('Context')
+                linestyle = '--' if quant == 'Q8_0' else '-'
+                ax.plot(grp['Context'], grp['TPS'], marker='o', linestyle=linestyle,
+                        label=f"{model} ({quant})", linewidth=2)
 
         ax.set_title(f"TPS vs. Context Window — {thr} Threads")
         ax.set_xlabel("Context Window Size (tokens)")
@@ -112,18 +140,23 @@ def analyze_results():
     # Memory-bandwidth-bound workloads should show diminishing returns; verify empirically.
     # Fixed to CTX=512 for the most complete dataset across all models.
     thread_df = summary[summary['Context'] == 512].groupby(
-        ['Model_Full', 'Threads']
+        ['Model_Full', 'Threads'], observed=True
     )['TPS'].mean().reset_index()
     thread_pivot = thread_df.pivot(index='Model_Full', columns='Threads', values='TPS').reset_index()
+
+    # CHANGE: reorder rows by parameter size
+    thread_pivot = reorder_pivot(thread_pivot, model_full_order)
 
     x = np.arange(len(thread_pivot))
     width = 0.35
     fig, ax = plt.subplots(figsize=(11, 6))
-    bars2 = ax.bar(x - width/2, thread_pivot[2], width, label='2 Threads', color='steelblue')
-    bars4 = ax.bar(x + width/2, thread_pivot[4], width, label='4 Threads', color='coral')
+    ax.bar(x - width/2, thread_pivot[2], width, label='2 Threads', color='steelblue')
+    ax.bar(x + width/2, thread_pivot[4], width, label='4 Threads', color='coral')
 
     # annotate percent change
     for i, (v2, v4) in enumerate(zip(thread_pivot[2], thread_pivot[4])):
+        if pd.isna(v2) or pd.isna(v4):
+            continue
         pct = (v4 - v2) / v2 * 100
         sign = '+' if pct >= 0 else ''
         ax.text(i, max(v2, v4) + 0.1, f"{sign}{pct:.1f}%", ha='center', fontsize=8, color='dimgray')
@@ -141,7 +174,7 @@ def analyze_results():
     # --- PLOT 4 (NEW): Q4 vs Q8 — Speed and Fidelity Trade-off (CTX=512, THR=2 baseline) ---
     # Side-by-side bars for TPS and PPL comparing Q4_K_M vs Q8_0 at baseline config.
     q_df = summary[(summary['Context'] == 512) & (summary['Threads'] == 2)].groupby(
-        ['Model_Short', 'Quant']
+        ['Model_Short', 'Quant'], observed=True
     ).agg({'TPS': 'mean', 'PPL': 'mean'}).reset_index()
 
     fig, (ax_tps, ax_ppl) = plt.subplots(1, 2, figsize=(14, 6))
@@ -150,6 +183,11 @@ def analyze_results():
         (ax_ppl, 'PPL', 'Perplexity', 'Fidelity — Lower is Better')
     ]:
         pivot = q_df.pivot(index='Model_Short', columns='Quant', values=metric).reset_index()
+
+        # CHANGE: reorder rows by parameter size
+        available = [m for m in model_order if m in pivot['Model_Short'].values]
+        pivot = pivot.set_index('Model_Short').reindex(available).reset_index()
+
         x = np.arange(len(pivot))
         w = 0.35
         ax.bar(x - w/2, pivot['Q4_K_M'], w, label='Q4_K_M', color='mediumseagreen')
@@ -171,14 +209,19 @@ def analyze_results():
     fig, axes = plt.subplots(1, 2, figsize=(14, 6), sharey=False)
     for ax, thr in zip(axes, [2, 4]):
         ttft_ctx = summary[summary['Threads'] == thr].groupby(
-            ['Model_Short', 'Quant', 'Context']
+            ['Model_Short', 'Quant', 'Context'], observed=True
         )['TTFT'].mean().reset_index()
 
-        for (model, quant), grp in ttft_ctx.groupby(['Model_Short', 'Quant']):
-            grp = grp.sort_values('Context')
-            linestyle = '--' if quant == 'Q8_0' else '-'
-            ax.plot(grp['Context'], grp['TTFT'], marker='s', linestyle=linestyle,
-                    label=f"{model} ({quant})", linewidth=2)
+        # CHANGE: iterate in explicit parameter-size order
+        for model in model_order:
+            for quant in quant_order:
+                grp = ttft_ctx[(ttft_ctx['Model_Short'] == model) & (ttft_ctx['Quant'] == quant)]
+                if grp.empty:
+                    continue
+                grp = grp.sort_values('Context')
+                linestyle = '--' if quant == 'Q8_0' else '-'
+                ax.plot(grp['Context'], grp['TTFT'], marker='s', linestyle=linestyle,
+                        label=f"{model} ({quant})", linewidth=2)
 
         ax.set_title(f"TTFT vs. Context Window — {thr} Threads")
         ax.set_xlabel("Context Window Size (tokens)")
@@ -277,11 +320,15 @@ def analyze_results():
     # --- PLOT 7 (NEW): Average Power Draw per Model Configuration ---
     # From master_results Avg_Watts — shows energy cost of each model/quant combination.
     hw_df = summary[summary['Context'] == 512].groupby(
-        ['Model_Full', 'Threads']
+        ['Model_Full', 'Threads'], observed=True
     ).agg({'Avg_Watts': 'mean', 'Peak_Temp': 'mean', 'Avg_Clock': 'mean'}).reset_index()
 
     hw_pivot_w = hw_df.pivot(index='Model_Full', columns='Threads', values='Avg_Watts').reset_index()
     hw_pivot_t = hw_df.pivot(index='Model_Full', columns='Threads', values='Peak_Temp').reset_index()
+
+    # CHANGE: reorder rows by parameter size
+    hw_pivot_w = reorder_pivot(hw_pivot_w, model_full_order)
+    hw_pivot_t = reorder_pivot(hw_pivot_t, model_full_order)
 
     fig, (ax_w, ax_t) = plt.subplots(1, 2, figsize=(14, 6))
 
@@ -309,8 +356,11 @@ def analyze_results():
     # J/Token = Avg_Watts / TPS; lower is better. Uses hardware data directly from master_results.
     eff_df = summary[summary['Context'] == 512].copy()
     eff_df['J_per_Token'] = eff_df['Avg_Watts'] / eff_df['TPS']
-    eff_summary = eff_df.groupby(['Model_Full', 'Threads'])['J_per_Token'].mean().reset_index()
+    eff_summary = eff_df.groupby(['Model_Full', 'Threads'], observed=True)['J_per_Token'].mean().reset_index()
     eff_pivot = eff_summary.pivot(index='Model_Full', columns='Threads', values='J_per_Token').reset_index()
+
+    # CHANGE: reorder rows by parameter size
+    eff_pivot = reorder_pivot(eff_pivot, model_full_order)
 
     x = np.arange(len(eff_pivot))
     w = 0.35
@@ -331,9 +381,13 @@ def analyze_results():
     # Reveals where throughput collapses; the key "edge cliff" visualization.
     # Fixed to THR=2 as baseline; averaged over prompts.
     heatmap_df = summary[summary['Threads'] == 2].groupby(
-        ['Model_Full', 'Context']
+        ['Model_Full', 'Context'], observed=True
     )['TPS'].mean().reset_index()
     heatmap_pivot = heatmap_df.pivot(index='Model_Full', columns='Context', values='TPS')
+
+    # CHANGE: reorder rows by parameter size (small → large models, top to bottom)
+    available_rows = [m for m in model_full_order if m in heatmap_pivot.index]
+    heatmap_pivot = heatmap_pivot.loc[available_rows]
 
     fig, ax = plt.subplots(figsize=(9, 6))
     sns.heatmap(
@@ -350,10 +404,14 @@ def analyze_results():
     # --- PLOT 10 (NEW): Clock Speed and CPU Load vs Model Config ---
     # ARM Cortex-A76 scales frequency under load; shows how hard each model pushes the CPU.
     clock_df = summary[summary['Context'] == 512].groupby(
-        ['Model_Full', 'Threads']
+        ['Model_Full', 'Threads'], observed=True
     ).agg({'Avg_Clock': 'mean', 'Avg_CPU': 'mean'}).reset_index()
     clock_pivot = clock_df.pivot(index='Model_Full', columns='Threads', values='Avg_Clock').reset_index()
     cpu_pivot   = clock_df.pivot(index='Model_Full', columns='Threads', values='Avg_CPU').reset_index()
+
+    # CHANGE: reorder rows by parameter size
+    clock_pivot = reorder_pivot(clock_pivot, model_full_order)
+    cpu_pivot   = reorder_pivot(cpu_pivot,   model_full_order)
 
     fig, (ax_c, ax_u) = plt.subplots(1, 2, figsize=(14, 6))
     for ax, pivot, ylabel, title in [
@@ -380,7 +438,7 @@ def analyze_results():
     print("\n" + "="*80)
     print(f"{'ENERGY EFFICIENCY (JOULES/TOKEN) — CTX=512':^80}")
     print("="*80)
-    eff_print = eff_df.groupby(['Model_Full', 'Threads']).agg(
+    eff_print = eff_df.groupby(['Model_Full', 'Threads'], observed=True).agg(
         Avg_W=('Avg_Watts', 'mean'),
         TPS=('TPS', 'mean'),
         J_per_Token=('J_per_Token', 'mean')
@@ -391,7 +449,9 @@ def analyze_results():
     print("\n" + "="*80)
     print(f"{'HARDWARE TELEMETRY SUMMARY (AVG ACROSS PROMPTS)':^80}")
     print("="*80)
-    hw_print = summary[summary['Context'] == 512].groupby(['Model_Full', 'Context', 'Threads']).agg(
+    hw_print = summary[summary['Context'] == 512].groupby(
+        ['Model_Full', 'Context', 'Threads'], observed=True
+    ).agg(
         Avg_W=('Avg_Watts', 'mean'),
         Peak_T=('Peak_Temp', 'mean'),
         Avg_CPU=('Avg_CPU', 'mean'),
